@@ -1,0 +1,615 @@
+"use strict";(self.rspackChunk_loomhq_web_client=self.rspackChunk_loomhq_web_client||[]).push([[89746],{488644(e,t,r){var n,a,i=((n={}).VIEWED="viewed",n.SMARTLINK_VIEWED="sl-viewed",n.SMARTLINK_CLICKED="sl-clicked",n),o=((a={}).COMMENTED="commented",a.CREATED="created",a.EDITED="edited",a.PUBLISHED="published",a.UPDATED="updated",a);r.d(t,{TO:()=>"/gateway/api/graphql",Y:()=>o,eX:()=>i})},839841(e,t,r){var n=r(745975),a=r(121912),i=r(143003),o=r(557309),s=function(e,t,r,s,c,l){var u=(0,a.MK)().getArtifact;return(0,n.useMemo)(function(){return(0,o.Z)(e,t,r,s,null!=c?c:u?function(){return u(i.b.name,i.b.dimensions)}:void 0,l)},[e,t,r,s,c,u,l])};r.d(t,{G:()=>s})},557309(e,t,r){r.d(t,{Z:()=>tm});var n,a,i,o,s,c=r(606100),l=r(840820),u=r(883714),d=r(4651),p=r(513185),m=r(589122),f=r(98812),y=r(345261),v=r.n(y),h=r(301463),b=r(655416);function g(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(g=function(){return!!e})()}var w=function(e){function t(e){var r,n,a=e.message,i=e.statusCode,o=e.path,s=e.method,c=e.xRequestId,l=e.headers;(0,u.A)(this,t),r=t,r=(0,p.A)(r),(n=(0,d.A)(this,g()?Reflect.construct(r,[],(0,p.A)(this).constructor):r.apply(this,void 0))).name="HttpError",n.message=a;var m=o.split("?")[0];return n.path=/^[/-a-z]+$/i.test(m)?m:"",n.method=s,n.statusCode=i,n.xRequestId=c,n.headers=Array.from(l.entries()).map(function(e,t){return"".concat(t,":").concat(e)}).sort().join(","),n}return(0,m.A)(t,e),(0,l.A)(t)}((0,b.A)(Error)),k="@atlassian/recent-work-client",A="2.20.0",I=r(509877),O=r(946034),P=["FetchedActivities","TransformedActivityItems","GeneratedQueryWithFilters"].map(function(e){return{key:e,startMark:"".concat(e,"_start"),endMark:"".concat(e,"_end")}});function j(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function T(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?j(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):j(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}function C(e,t){return x.apply(this,arguments)}function x(){return(x=(0,c.A)(v().mark(function e(t,r){var n,a,i;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return n="v2"===r?new I.l("client",{type:O.y.Load,performanceType:O.U.Custom,platform:{component:"recent-work"},timings:P}):new I.l("client-v3",{type:O.y.Load,performanceType:O.U.Custom,platform:{component:"recent-work"},timings:P}),e.prev=1,n.start(),n.addMetadata({clientVersion:r,packageName:k,packageVersion:A}),e.next=2,t(n);case 2:return a=e.sent,n.success(),e.abrupt("return",a);case 3:throw e.prev=3,i=e.catch(1),n.failure({metadata:{error:E(i)}}),i;case 4:case"end":return e.stop()}},e,null,[[1,3]])}))).apply(this,arguments)}var E=function(e){if(e instanceof w){var t;return T(T({},e),{},{xRequestId:null!=(t=e.xRequestId)?t:void 0,cause:void 0})}return e instanceof Error?T(T({},e),{},{cause:void 0}):"unknown"},D=r(488644),S=(0,l.A)(function e(t,r,n,a,i){(0,u.A)(this,e),(0,f.A)(this,"product","unknown"),(0,f.A)(this,"baseUrl",D.TO),r&&(this.product=r),this.clientVersion=t,this.headers=null!=n?n:{},a&&(this.baseUrl=a),this.collabContextId=i}),F=r(186516),R=r(527112),N=r.n(R),_=function(e){return"".concat(N()(e),"_activity_recentWorkClient")},U=r(823820),q=r(835534),B=new RegExp(/^https?:\/\//);function M(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function V(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?M(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):M(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}var L=(n=(0,c.A)(v().mark(function e(t,r){var n,a,i,o,s,c=arguments;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return n=c.length>2&&void 0!==c[2]?c[2]:{},a=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{host:window.location.hostname,port:window.location.port};return B.test(e)?e:"localhost"===t.host?"http://".concat(t.host,":").concat(t.port).concat(e):e}(t),e.next=1,fetch(a,V({credentials:"include",method:r},n)).catch(function(e){throw new U.A({error:e,path:t,method:r})});case 1:if(o=(i=e.sent).status,i.ok){e.next=3;break}return s=$,e.next=2,i.text();case 2:throw new w({message:s(e.sent),method:r,path:t,statusCode:o,xRequestId:i.headers.get("x-request-id"),headers:i.headers});case 3:return e.abrupt("return",i);case 4:case"end":return e.stop()}},e)})),function(e,t){return n.apply(this,arguments)}),W=(a=(0,c.A)(v().mark(function e(t,r){var n,a,i,o=arguments;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return n=o.length>2&&void 0!==o[2]?o[2]:{},e.next=1,L(t,r,n);case 1:return a=e.sent,e.next=2,a.text();case 2:return i=e.sent,e.abrupt("return",i?JSON.parse(i):{});case 3:case"end":return e.stop()}},e)})),function(e,t){return a.apply(this,arguments)}),Y=(i=(0,c.A)(v().mark(function e(t,r,n,a){return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.abrupt("return",(0,q.bL)(function(){return W(t,"POST",{body:JSON.stringify(r),headers:V({"content-type":"application/json"},a)})},{intervalsMS:null!=n?n:[]}));case 1:case"end":return e.stop()}},e)})),function(e,t,r,n){return i.apply(this,arguments)});function $(e){var t;try{t=JSON.parse(e)}catch(t){return e}return delete t.timestamp,JSON.stringify(t)}var J=r(322820);function G(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function Q(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?G(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):G(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}var H=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=arguments.length>1?arguments[1]:void 0,r=arguments.length>2?arguments[2]:void 0;return Object.entries(e).reduce(function(e,n){var a=(0,J.A)(n,2),i=a[0],o=a[1],s=t?t(i,o):(0,f.A)({},i,o);return null!=r&&r.includes(i)?Q(Q({},e),s):Q(Q({},e),{},{arguments:Q(Q({},e.arguments),s)})},{type:"AND",arguments:{}})},K=["products","eventTypes","objectTypes"],X=new Map([["actors","accountIds"]]),z=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return H(e,function(e,t){var r=Array.isArray(t)&&K.includes(e)?t.map(function(e){return e.toUpperCase()}):t,n=X.has(e)?X.get(e):e;return(0,f.A)({},n,r)})},Z=["limit"],ee=["limit","actors"],et=new Map([["myActivity",function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return e.limit,e.actors,z((0,F.A)(e,ee))}],["activities",function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return e.limit,z((0,F.A)(e,Z))}]]),er=["products","eventTypes","objectTypes"],en=["actors","rootContainerIds","collabContextId"],ea=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return H(e,function(e,t){return Array.isArray(t)&&er.includes(e)?(0,f.A)({},e,t.map(function(e){return e.toLowerCase()})):(0,f.A)({},e,t)},en)},ei=["limit"],eo=["limit","actors"],es=new Map([["myActivity",function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return e.limit,e.actors,ea((0,F.A)(e,eo))}],["activities",function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return e.limit,ea((0,F.A)(e,ei))}]]),ec=`
+  nodes {
+    id
+    timestamp
+    object {
+      id
+      name
+      cloudId
+      localResourceId
+      product
+      type
+      url
+      iconUrl
+      containers {
+        name
+      }
+      contributors {
+        profile {
+          accountId
+          name
+          picture
+        }
+      }
+      events {
+        eventType
+      }
+      extension {
+        ... on ActivitiesJiraIssue {
+          issueKey
+        }
+      }
+    }
+  }
+`,el=new Map([["workedOn",`
+   workedOn(first: $first, filters: $filters) {
+     `.concat(ec,`
+   }
+`)],["viewed",`
+   viewed(first: $first, filters: $filters) {
+     `.concat(ec,`
+   }
+`)],["all",`
+    all(first: $first, filters: $filters) {
+      `.concat(ec,`
+    }
+`)]]),eu=function(e,t){return`
+    query `.concat(_(e),`($first: Int, $filters: [ActivitiesFilter!]) {
+      activities {
+        `).concat(t,`
+      }
+    }
+`)},ed=function(e,t,r){var n;return Array.isArray(t.actors)?{query:eu(e,r.filter(function(e){return"viewed"!==e}).map(function(e){return el.get(e)}).join(`
+`)),queryFilters:et.get("activities")(t)}:{query:eu(e,(n=r.map(function(e){return el.get(e)}),`
+      myActivities {
+        `.concat(n.join(`
+`),`
+      }
+`))),queryFilters:et.get("myActivity")(t)}};function ep(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return t&&t.nodes?t.nodes.map(function(t){var r=t.object,n=t.timestamp,a=r.cloudId,i=r.events,o=r.extension,s=r.iconUrl,c=r.id,l=r.localResourceId,u=r.name,d=r.product,p=r.url,m=r.type,f=i[0].eventType.toLowerCase(),y=o&&o.issueKey,v=[];return y&&v.push({name:y}),Array.isArray(r.containers)&&(v=v.concat(r.containers)),{query:e,containers:v=v.filter(function(e){return!!e.name}),contributors:(r.contributors||[]).reduce(function(e,t){if(t.profile){var r=t.profile,n=r.accountId,a=r.picture;e.push({accountId:n,name:t.profile.name,picture:a})}return e},[]),eventType:f,object:{rootContainerIdentifier:{id:a,type:"SITE",ari:"".concat("ari:cloud:platform::site/").concat(a)},deduplicateId:c,icon:{type:"URL",value:s},id:c,localResourceId:l,name:u,product:d,subProduct:null,type:m,url:p},timestamp:n}}):[]}var em=["limit"],ef=["teamCentral","editor","people","jira","townsquare","apOnboarding","worklens","confluence","start"],ey=(o=(0,c.A)(v().mark(function e(t){var r,n,a,i,o,s,c,l,u,d,p,m,f,y,h,b,g,w,k,A;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return n=t.experience,a=t.product,i=t.retryMS,s=void 0===(o=t.filters)?{}:o,c=t.activityQueries,l=t.baseUrl,d=void 0===(u=s.limit)?50:u,p=(0,F.A)(s,em),n.mark("GeneratedQueryWithFilters_start"),f=(m=ed(a,p,c)).query,y=m.queryFilters,n.mark("GeneratedQueryWithFilters_end"),h=ef.includes(a)?a:"start",n.mark("FetchedActivities_start"),e.prev=1,e.next=2,Y(l,{operationName:_(h),query:f,variables:{first:d,filters:y}},i);case 2:b=e.sent,e.next=4;break;case 3:if(e.prev=3,!(!(A=e.catch(1))||401!==A.statusCode&&"The operation was aborted."!==A.message)){e.next=4;break}throw A;case 4:if(n.mark("FetchedActivities_end"),g=[],w=[],k=[],!(!b||!(null!=(r=b.data)&&r.activities))){e.next=5;break}return e.abrupt("return",{all:k,workedOn:g,viewed:w});case 5:return(n.mark("TransformedActivityItems_start"),void 0!==b.data.activities.myActivities)?(b.data.activities.myActivities.workedOn&&c.includes("workedOn")&&(g=ep("workedOn",b.data.activities.myActivities.workedOn)),b.data.activities.myActivities.viewed&&c.includes("viewed")&&(w=ep("viewed",b.data.activities.myActivities.viewed)),b.data.activities.myActivities.all&&c.includes("all")&&(k=ep("all",b.data.activities.myActivities.all))):(b.data.activities.workedOn&&c.includes("workedOn")&&(g=ep("workedOn",b.data.activities.workedOn)),b.data.activities.all&&c.includes("all")&&(k=ep("all",b.data.activities.all))),n.mark("TransformedActivityItems_end"),e.abrupt("return",{all:k,viewed:w,workedOn:g});case 6:case"end":return e.stop()}},e,null,[[1,3]])})),function(e){return o.apply(this,arguments)});function ev(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function eh(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?ev(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):ev(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}function eb(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(eb=function(){return!!e})()}var eg=function(e){function t(e,r,n){var a,i,o,s;return(0,u.A)(this,t),i=t,o=["v2",e,void 0,r,n],i=(0,p.A)(i),a=(0,d.A)(this,eb()?Reflect.construct(i,o||[],(0,p.A)(this).constructor):i.apply(this,o)),(0,f.A)(a,"fetchActivities",(s=(0,c.A)(v().mark(function e(t,r,n){var i;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return i=a.collabContextId&&(0,h.fg)("platform_recent_work_collab_context_id")?eh(eh({},r),{},{collabContextId:a.collabContextId}):r,e.abrupt("return",C(function(e){return ey({experience:e,product:a.product,retryMS:t,filters:i,activityQueries:n,baseUrl:a.baseUrl})},"v2"));case 1:case"end":return e.stop()}},e)})),function(e,t,r){return s.apply(this,arguments)})),(0,f.A)(a,"setProduct",function(e){a.product=e}),a}return(0,m.A)(t,e),(0,l.A)(t)}(S),ew=r(451893);function ek(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(ek=function(){return!!e})()}var eA=function(e){function t(e){var r,n,a;return(0,u.A)(this,t),n=t,a=[e],n=(0,p.A)(n),(r=(0,d.A)(this,ek()?Reflect.construct(n,a||[],(0,p.A)(this).constructor):n.apply(this,a))).name="GraphQLFragmentError",r.message=e,r}return(0,m.A)(t,e),(0,l.A)(t)}((0,b.A)(Error));function eI(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(eI=function(){return!!e})()}var eO=function(e){function t(e){var r,n,a;return(0,u.A)(this,t),n=t,a=[e.message],n=(0,p.A)(n),(r=(0,d.A)(this,eI()?Reflect.construct(n,a||[],(0,p.A)(this).constructor):n.apply(this,a))).name="GraphQLJSError",r.error=e,r.message=e.message,r}return(0,m.A)(t,e),(0,l.A)(t)}((0,b.A)(Error));function eP(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(eP=function(){return!!e})()}var ej=function(e){function t(e){var r,n;return(0,u.A)(this,t),n=t,n=(0,p.A)(n),(r=(0,d.A)(this,eP()?Reflect.construct(n,[],(0,p.A)(this).constructor):n.apply(this,void 0))).name="GraphQLNoResultsError",r.errors=e,r.message="GraphQL returned errors & no results",r.errorMessages=e.map(function(e){return e.message}),r}return(0,m.A)(t,e),(0,l.A)(t)}((0,b.A)(Error)),eT=r(379562),eC=r.n(eT);function ex(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(ex=function(){return!!e})()}var eE=function(e){function t(e){var r,n,a=e.error,i=e.message;(0,u.A)(this,t),r=t,r=(0,p.A)(r),n=(0,d.A)(this,ex()?Reflect.construct(r,[],(0,p.A)(this).constructor):r.apply(this,void 0));var o=a instanceof Error?a:Error();return n.name="HydratorError",n.message=i,n.originalMessage=o.message,n.stack=o.stack,n.originalName=o.name,n}return(0,m.A)(t,e),(0,l.A)(t)}((0,b.A)(Error));function eD(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function eS(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}var eF=function(e,t,r){if(t)if("__typename"in t){var n=e[t.__typename];if(n)try{return eR(t,n)}catch(e){r&&r(new eE({error:e,message:"Hydrator failed for [".concat(t.__typename,"].")}))}else r&&r(new eE({message:"Missing hydrator for [".concat(t.__typename,"].")}))}else r&&r(new eE({message:"Missing [__typename] field from data."}));return null},eR=function(e,t){var r=t.hydratorPaths;return function(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?eD(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):eD(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}({staticFallbacks:t.staticFallbacks},Object.entries(r).reduce(function(t,r){var n=(0,J.A)(r,2),a=n[0],i=n[1].map(function(t){return function(e,t){var r,n=t.split(/\(|\)./),a=e,i=function(e){var t="u">typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!t){if(Array.isArray(e)||(t=function(e){if(e){if("string"==typeof e)return eS(e,void 0);var t=({}).toString.call(e).slice(8,-1);return"Object"===t&&e.constructor&&(t=e.constructor.name),"Map"===t||"Set"===t?Array.from(e):"Arguments"===t||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)?eS(e,void 0):void 0}}(e))){t&&(e=t);var r=0,n=function(){};return{s:n,n:function(){return r>=e.length?{done:!0}:{done:!1,value:e[r++]}},e:function(e){throw e},f:n}}throw TypeError(`Invalid attempt to iterate non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}var a,i=!0,o=!1;return{s:function(){t=t.call(e)},n:function(){var e=t.next();return i=e.done,e},e:function(e){o=!0,a=e},f:function(){try{i||null==t.return||t.return()}finally{if(o)throw a}}}}(n);try{for(i.s();!(r=i.n()).done;){var o=r.value;a=function(e,t){if(!e)return e;if(t.includes(":")){var r=t.split(":"),n=(0,J.A)(r,2),a=n[0],i=n[1];return function(e,t,r){return e.find(function(e){return eC()(e,t)===r})}(e,a.trim(),i.trim().replace(/"/g,""))}return eC()(e,t)}(a,o)}}catch(e){i.e(e)}finally{i.f()}return a}(e,t)});if(i)t[a]=i;else throw Error("Bad hydrator path: ".concat(a));return t},{}))},eN=r(219207),e_=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"";return e?Array.isArray(e)?e.join(t):e:null};function eU(e){return"string"==typeof e}function eq(e){return"object"===(0,eN.A)(e)&&void 0!==e.value&&!!e.value}var eB=RegExp("^ari:third-party:(\\S+)::(\\S+)\\/(\\S+)$"),eM=function(e){var t=eB.exec(e);if(!t)throw Error("Invalid third party ARI. Use ".concat(eV.name," to check before calling this function."));var r=(0,J.A)(t,2);return r[0],r[1]},eV=function(e){return eB.test(e)},eL=function(e,t,r){var n,a,i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"icon";return null!=r&&r[i]&&e?{type:"URL",value:null!=(n=null==(a=r.thirdPartyIconPath)?void 0:a.replace("{replaceProductName}",e))?n:r[i],fallbackIcon:r[i]}:eY(t,r)},eW=function(e,t,r){switch(e){case"ConfluenceBlogPost":return eY(t,r,"confluenceBlogIcon")||eY(t,r);case"ConfluencePage":return eY(t,r,"confluencePageIcon")||eY(t,r);default:return eY(t,r)}},eY=function(e,t){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"icon";if(Array.isArray(e)&&e.length>0){var n=e.filter(eq);if(n.length>0)return{type:"EMOJI",value:n[0].value,fallback:null==t?void 0:t[r]};var a=e.filter(eU);if(a.length>0){var i=e_(a);if(null!==i)return{type:"URL",value:i}}}return null!=t&&t[r]?{type:"URL",value:t[r]}:null},e$=r(143003),eJ=new RegExp(/^Validation error.*?@ '(\w+)/),eG=new Map([["ValidationError",function(e){var t=eJ.exec(e.message);if(Array.isArray(t)){var r=t[1];if(r)return r}return null}]]);let eQ=function(e){var t=eG.get(e.extensions.classification);return"function"==typeof t?t(e):null};var eH=["limit"],eK=new Map([["workedOn",`
+   workedOn(first: $first, filter: $filter) {
+     ...activityItemConnection
+   }
+`],["viewed",`
+   viewed(first: $first, filter: $filter) {
+     ...activityItemConnection
+   }
+`],["all",`
+    all(first: $first, filter: $filter) {
+      ...activityItemConnection
+    }
+`]]),eX=function(e,t,r){var n=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"ActivityFilter";return`
+    query `.concat(_(e),"($first: Int, $filter: ").concat(n,`) {
+      activity {
+        `).concat(t,`
+      }
+    }
+`).concat(r,`
+`)},ez=function(e,t,r,n){var a;return Array.isArray(t.actors)?{query:eX(e,r.filter(function(e){return"viewed"!==e}).map(function(e){return eK.get(e)}).join(`
+`),n,"ActivityFilter"),queryFilters:es.get("activities")(t)}:{query:eX(e,(a=r.map(function(e){return eK.get(e)}),`
+      myActivity {
+        `.concat(a.join(`
+`),`
+      }
+`)),n,"MyActivityFilter"),queryFilters:es.get("myActivity")(t)}},eZ=function(e,t,r,n){var a=t.limit,i=ez(e,(0,F.A)(t,eH),r,n),o=i.query,s=i.queryFilters;return{operationName:_(e),query:o,variables:{first:void 0===a?50:a,filter:s}}},e0=r(971630),e1=RegExp("^ari:third-party:(\\S+)::(\\S+)\\/(\\S+)$"),e2=function(e){var t=e1.exec(e);if(!t)throw Error("Invalid third party ARI. Use ".concat(e3.name," to check before calling this function."));var r=(0,J.A)(t,2);return r[0],r[1]},e3=function(e){return e1.test(e)};function e4(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function e8(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?e4(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):e4(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}function e5(e){return Object.values(e.reduce(function(e,t){var r=t.object.deduplicateId||t.object.id,n=e[r];if(n){var a=n.aggregatedActivityItems||[];Date.parse(n.timestamp)<Date.parse(t.timestamp)?(t.aggregatedActivityItems=[].concat((0,e0.A)(a),[n]),delete e[r],e[r]=t):e[r].aggregatedActivityItems=[].concat((0,e0.A)(a),[t])}else e[r]=t;return e},{}))}var e6=function(e){return e.myActivity?e.myActivity:e},e7=new Map([["ari:cloud:platform::site/","SITE"]]),e9=["activity","all","myActivity","workedOn","viewed","activityItemConnection","activityItemEdge"],te=["IncorrectAuthException"];function tt(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function tr(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,n)}return r}function tn(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?tr(Object(r),!0).forEach(function(t){(0,f.A)(e,t,r[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):tr(Object(r)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))})}return e}function ta(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(e){}return(ta=function(){return!!e})()}var ti=["ConfluenceComment","ConfluenceFooterComment","ConfluenceInlineComment"],to=new Map([[401,[/.*/]],[403,[/Invalid CORS request/]]]),ts=["The operation was aborted."],tc={source:k,sourcePackageVersion:A},tl=function(e){function t(e,r,n,a,i){var o,s,l,m,y;return(0,u.A)(this,t),s=t,l=["v3",e,{"X-ExperimentalApi":"ActivityV3Api"},r,i],s=(0,p.A)(s),o=(0,d.A)(this,ta()?Reflect.construct(s,l||[],(0,p.A)(this).constructor):s.apply(this,l)),(0,f.A)(o,"setProduct",function(e){o.product=e}),(0,f.A)(o,"captureException",function(e,t){o.clientHandlers&&o.clientHandlers.captureException(e,tn(tn({},tc),t))}),(0,f.A)(o,"captureWarning",function(e,t){o.clientHandlers&&o.clientHandlers.captureWarning(e,tn(tn({},tc),t))}),(0,f.A)(o,"fetchHydratorConfig",(0,c.A)(v().mark(function e(){return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,o.hydratorConfigClient.fetchConfig();case 1:return e.abrupt("return",e.sent);case 2:case"end":return e.stop()}},e)}))),(0,f.A)(o,"handleGraphQLErrors",function(e){var t=[];if(Array.isArray(e)){var r,n=function(e){var t="u">typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!t){if(Array.isArray(e)||(t=function(e){if(e){if("string"==typeof e)return tt(e,void 0);var t=({}).toString.call(e).slice(8,-1);return"Object"===t&&e.constructor&&(t=e.constructor.name),"Map"===t||"Set"===t?Array.from(e):"Arguments"===t||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)?tt(e,void 0):void 0}}(e))){t&&(e=t);var r=0,n=function(){};return{s:n,n:function(){return r>=e.length?{done:!0}:{done:!1,value:e[r++]}},e:function(e){throw e},f:n}}throw TypeError(`Invalid attempt to iterate non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}var a,i=!0,o=!1;return{s:function(){t=t.call(e)},n:function(){var e=t.next();return i=e.done,e},e:function(e){o=!0,a=e},f:function(){try{i||null==t.return||t.return()}finally{if(o)throw a}}}}(e);try{for(n.s();!(r=n.n()).done;){var a=r.value;o.captureException(new eO(a));var i=eQ(a);i&&t.push(i)}}catch(e){n.e(e)}finally{n.f()}return t}return[]}),(0,f.A)(o,"fetchActivitiesV3",(m=(0,c.A)(v().mark(function e(t,r,n,a){var i,s,l,u,d,p,m,f,y,h,b,g,w,k,A,I=arguments;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return d=!(I.length>4)||void 0===I[4]||I[4],e.next=1,o.fetchHydratorConfig();case 1:return m=(p=e.sent).fragments,f=p.hydrators,t.mark("GeneratedQueryWithFilters_start"),e.prev=2,e.next=3,(0,q.bL)((0,c.A)(v().mark(function e(){var i,s,c;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return i=eZ(o.product,n,a,m),t.mark("GeneratedQueryWithFilters_end"),t.mark("FetchedActivities_start"),t.addMetadata({filters:function(e){var t,r,n,a,i,o;return e8(e8({},e),{},{actors:null==(t=e.actors)?void 0:t.length,containerIds:null==(r=e.containerIds)?void 0:r.length,products:null==(n=e.products)?void 0:n.join(","),eventTypes:null==(a=e.eventTypes)?void 0:a.join(","),objectTypes:null==(i=e.objectTypes)?void 0:i.join(","),rootContainerIds:null==(o=e.rootContainerIds)?void 0:o.join(",")})}(n)}),e.next=1,Y(o.baseUrl,i,r,tn({},o.headers));case 1:var l;if(s=e.sent,t.mark("FetchedActivities_end"),!((c=o.handleGraphQLErrors(null==s?void 0:s.errors)).length>0)){e.next=2;break}throw l=m,m=c.filter(function(e){return!e9.includes(e)}).reduce(function(e,t){var r,n;return e.replace(RegExp("...".concat(t,`
+`),"g"),"").replace(RegExp("fragment ".concat((r=t).charAt(0).toLowerCase()+r.slice(1)," on ").concat((n=t).charAt(0).toUpperCase()+n.slice(1)," ({(.|\\n)+?(?=fragment))"),"gm"),"")},l),new eA("Missing fragments: [".concat(c.toString(),"]"));case 2:return e.abrupt("return",s);case 3:case"end":return e.stop()}},e)})),{intervalsMS:[0,0,0],retryOn:function(e){return[eA].some(function(t){return e instanceof t})},captureException:o.captureException});case 3:y=e.sent,e.next=5;break;case 4:if(e.prev=4,!(!(A=e.catch(2))||!(null!=(h=to.get(A.statusCode))&&h.some(function(e){return e.test(A.message)}))&&!ts.includes(A.message))){e.next=5;break}throw A;case 5:var O;if(!(null!=(O=y)&&O.data&&Array.isArray(O.errors)&&O.errors.filter(function(e){return!e.extensions.classification||!te.includes(e.extensions.classification)}).length>0&&function(e){var t,r,n;return!e.activity||(null==(t=e6(e.activity).all)||null==(t=t.edges)?void 0:t.length)===0&&(null==(r=e6(e.activity).workedOn)||null==(r=r.edges)?void 0:r.length)===0&&(null==(n=e.activity)||null==(n=n.myActivity)||null==(n=n.viewed)||null==(n=n.edges)?void 0:n.length)===0}(O.data))){e.next=6;break}throw new ej(y.errors);case 6:if(!(!y||!(null!=(i=y.data)&&i.activity))){e.next=7;break}return e.abrupt("return",{workedOn:[],viewed:[],all:[]});case 7:return t.mark("TransformedActivityItems_start"),b=tp("workedOn",(null==(s=e6(y.data.activity))||null==(s=s.workedOn)?void 0:s.edges)||[],f,o.captureException),g=tp("viewed",(null==(l=y.data.activity)||null==(l=l.myActivity)||null==(l=l.viewed)?void 0:l.edges)||[],f,o.captureException),w=tp("all",(null==(u=e6(y.data.activity))||null==(u=u.all)?void 0:u.edges)||[],f,o.captureException),t.mark("TransformedActivityItems_end"),k={viewed:g,workedOn:b,all:w},e.abrupt("return",d?function(e){var t=e.all,r=e.viewed,n=e.workedOn;return{all:e5(t),viewed:e5(r),workedOn:e5(n)}}(k):k);case 8:case"end":return e.stop()}},e,null,[[2,4]])})),function(e,t,r,n){return m.apply(this,arguments)})),(0,f.A)(o,"fetchActivities",(y=(0,c.A)(v().mark(function e(t,r,n){var a,i,s=arguments;return v().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return a=!(s.length>3)||void 0===s[3]||s[3],i=o.collabContextId&&(0,h.fg)("platform_recent_work_collab_context_id")?tn(tn({},r),{},{collabContextId:o.collabContextId}):r,e.abrupt("return",C(function(e){return o.fetchActivitiesV3(e,t,i,n,a)},"v3"));case 1:case"end":return e.stop()}},e)})),function(e,t,r){return y.apply(this,arguments)})),o.clientHandlers=n,o.hydratorConfigClient=new e$.A({captureException:o.captureException,captureWarning:o.captureWarning},e,a),o}return(0,m.A)(t,e),(0,l.A)(t)}(S),tu=function(e,t){var r;return"ConfluencePage"===e.data.__typename&&"LIVE"===e_(t.subtype)?eY(t.icon,t.staticFallbacks,"confluenceLiveDocIcon"):"graph"===e.product&&eV(e.id)?eL(eM(e.id).split(".").at(1),t.icon,t.staticFallbacks):ti.includes(e.data.__typename)?eW((null==(r=e.data)||null==(r=r.container)?void 0:r.__typename)||e.data.__typename,t.icon,t.staticFallbacks):eY(t.icon,t.staticFallbacks)},td=function(e){var t=e_(e.statusValue),r=e_(e.statusScore),n=e_(e.statusColor);return t||r||n?{value:t,score:r,color:n}:void 0};function tp(e,t,r,n){return t.reduce(function(t,a){if(a&&a.node&&a.node.object&&a.node.event){var i,o=a.node,s=o.object,c=o.event;if(!s.product||!s.type)return t;var l=s.product;("graph"===s.product||s.id.startsWith("ari:cloud:graph::pull-request"))&&(w=s.id,k="graph",w.startsWith("ari:cloud:graph::pull-request")&&null!=(b=s.data)&&b.providerName?k=(null==(g=s.data)?void 0:g.providerName)||"graph":e3(w)&&(k=e2(w).split(".")[1]),l=k.toLowerCase());var u=a.node.event.eventType===D.eX.SMARTLINK_VIEWED,d=(0,h.fg)("platform_recent_work_enable_sl-viewed_results"),p=(null==(i=a.node.object.data)?void 0:i.__typename)==="ExternalPullRequest",m=ew.Ay.getExperimentValue("add-github-activityplatform-recentworkitem","isEnabled",!1);if(u&&!d||p&&"github"===l&&!m)return t;var f=[],y=(s.contributors||[]).reduce(function(e,t){if(t.profile){var r=t.profile,n=r.accountId,a=r.picture;e.push({accountId:n,name:t.profile.name,picture:a})}return e},[]),v=eF(r,s.data,n);if(v){v.key&&f.push({name:e_(v.key," ")});var b,g,w,k,A,I,O="assets"===l&&(0,h.fg)("cdm_display_name")?v.containersWithDisplayName:v.containers;O&&f.push({name:e_(O," ")});var P=c.actor?{name:c.actor.name,picture:c.actor.picture,accountId:c.actor.accountId}:void 0,j="comment"===s.type&&c.eventType===D.Y.CREATED?D.Y.COMMENTED:c.eventType;t.push({actor:P,query:e,containers:f,contributors:y,eventType:j,object:{rootContainerIdentifier:(I=(A=s.rootContainerId).indexOf("/"),{ari:A,id:A.slice(I+1),type:e7.get(A.slice(0,I+1))||"OTHER"}),icon:tu(s,v),id:s.id,deduplicateId:e_(v.deduplicateId)||s.id,localResourceId:e_(v.localResourceId),name:e_(v.name," "),displayName:"assets"===l&&(0,h.fg)("cdm_display_name")?e_(v.displayName," "):void 0,product:l,subProduct:s.subProduct,type:s.type,subtype:e_(v.subtype)||s.data.subtype,url:e_(v.url),objectTypeName:e_(v.objectTypeName),creator:e_(v.creator),providerId:e_(v.providerId),status:td(v),__typename:s.data.__typename},timestamp:c.timestamp})}}return t},[])}var tm=function(e,t,r,n,a,i){return(s&&s!==e&&null!=r&&r.captureWarning&&r.captureWarning("ActivityClient version has changed, is this intentional?"),s=e||"v3","v2"===e)?new eg(t,n,i):new tl(t,n,r,a,i)}},143003(e,t,r){r.d(t,{b:()=>m,A:()=>f});var n,a=r(606100),i=r(883714),o=r(840820),s=r(98812),c=r(345261),l=r.n(c),u=r(550035),d={localization:{eventTypes:{commented:{absolute:"You commented on {absoluteTime}",relative:"You commented {relativeTime}",standalone:"You commented",multiAbsolute:"Commented on {absoluteTime}",multiRelative:"Commented {relativeTime}",multiStandalone:"Commented"},created:{absolute:"You created on {absoluteTime}",relative:"You created {relativeTime}",standalone:"You created",multiAbsolute:"Created on {absoluteTime}",multiRelative:"Created {relativeTime}",multiStandalone:"Created"},edited:{absolute:"You edited on {absoluteTime}",relative:"You edited {relativeTime}",standalone:"You edited",multiAbsolute:"Edited on {absoluteTime}",multiRelative:"Edited {relativeTime}",multiStandalone:"Edited"},published:{absolute:"You published on {absoluteTime}",relative:"You published {relativeTime}",standalone:"You published",multiAbsolute:"Published on {absoluteTime}",multiRelative:"Published {relativeTime}",multiStandalone:"Published"},updated:{absolute:"You updated on {absoluteTime}",relative:"You updated {relativeTime}",standalone:"You updated",multiAbsolute:"Updated on {absoluteTime}",multiRelative:"Updated {relativeTime}",multiStandalone:"Updated"},viewed:{absolute:"You viewed on {absoluteTime}",relative:"You viewed {relativeTime}",standalone:"You viewed",multiAbsolute:"Viewed on {absoluteTime}",multiRelative:"Viewed {relativeTime}",multiStandalone:"Viewed"},"sl-viewed":{absolute:"You viewed on {absoluteTime}",relative:"You viewed {relativeTime}",standalone:"You viewed",multiAbsolute:"Viewed on {absoluteTime}",multiRelative:"Viewed {relativeTime}",multiStandalone:"Viewed"},clicked:{absolute:"You viewed on {absoluteTime}",relative:"You viewed {relativeTime}",standalone:"You viewed",multiAbsolute:"Viewed on {absoluteTime}",multiRelative:"Viewed {relativeTime}",multiStandalone:"Viewed"},"sl-clicked":{absolute:"You viewed on {absoluteTime}",relative:"You viewed {relativeTime}",standalone:"You viewed",multiAbsolute:"Viewed on {absoluteTime}",multiRelative:"Viewed {relativeTime}",multiStandalone:"Viewed"}}},hydrators:{TownsquareGoal:{hydratorPaths:{id:["id"],key:["key"],name:["name"],url:["url"],icon:["iconData"],statusValue:["status.value"],statusScore:["status.score"]}},TownsquareProject:{hydratorPaths:{id:["id"],key:["key"],name:["name"],url:["url"],icon:["iconData"],statusValue:["state.value"]}},TownsquareComment:{hydratorPaths:{id:["id"],key:["container.key"],name:["container.name"],url:["container.url"],icon:["container.iconData"],deduplicateId:["container.id"]}},ConfluencePage:{hydratorPaths:{id:["id"],name:["title"],localResourceId:["pageId"],subtype:["subtype"],url:["links.base","links.webUi"],containers:["space.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceLiveDocIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/live-doc.svg"}},ConfluenceBlogPost:{hydratorPaths:{id:["id"],name:["title"],localResourceId:["blogPostId"],url:["links.base","links.webUi"],containers:["space.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/blogpost.svg"}},ConfluenceWhiteboard:{hydratorPaths:{id:["id"],name:["title"],localResourceId:["whiteboardId"],url:["links.base","links.webUi"],containers:["space.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/whiteboard.svg"}},ConfluenceDatabase:{hydratorPaths:{id:["id"],name:["title"],localResourceId:["databaseId"],url:["links.base","links.webUi"],containers:["space.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/database.svg"}},ConfluenceEmbed:{hydratorPaths:{id:["id"],name:["title"],localResourceId:["embedId"],url:["links.base","links.webUi"],containers:["space.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/embed.svg"}},ConfluenceComment:{hydratorPaths:{id:["id"],name:["container.title"],url:["links.base","links.webUi"],containers:["container.space.name"],deduplicateId:["container.id"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceBlogIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/blogpost.svg",confluencePageIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceWhiteboardIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/whiteboard.svg"}},ConfluenceFooterComment:{hydratorPaths:{id:["id"],name:["container.title"],url:["links.base","links.webUi"],containers:["container.space.name"],deduplicateId:["container.id"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceBlogIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/blogpost.svg",confluencePageIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceWhiteboardIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/whiteboard.svg"}},ConfluenceInlineComment:{hydratorPaths:{id:["id"],name:["container.title"],url:["links.base","links.webUi"],containers:["container.space.name"],deduplicateId:["container.id"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceBlogIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/blogpost.svg",confluencePageIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/page.svg",confluenceWhiteboardIcon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/confluence/whiteboard.svg"}},JiraIssue:{hydratorPaths:{id:["id"],name:['fieldsById.edges(node.fieldId: "summary").node.text'],url:["webUrl"],containers:['fieldsById.edges(node.fieldId: "project").node.project.name'],objectTypeName:['fieldsById.edges(node.fieldId: "issuetype").node.issueType.name'],icon:['fieldsById.edges(node.fieldId: "issuetype").node.issueType.avatar.medium'],key:["key"],statusValue:['fieldsByIdOrAlias(fieldId: "status").status.name'],statusColor:['fieldsByIdOrAlias(fieldId: "status").status.statusCategory.colorName']}},JiraPlatformComment:{hydratorPaths:{id:["commentId"],name:['issue.fieldsById.edges(node.fieldId: "summary").node.text'],url:["webUrl"],containers:['issue.fieldsById.edges(node.fieldId: "project").node.project.name'],objectTypeName:['issue.fieldsById.edges(node.fieldId: "issuetype").node.issueType.name'],icon:['issue.fieldsById.edges(node.fieldId: "issuetype").node.issueType.avatar.medium'],key:["issue.key"],deduplicateId:["issue.id"]}},JiraServiceManagementComment:{hydratorPaths:{id:["commentId"],name:['issue.fieldsById.edges(node.fieldId: "summary").node.text'],url:["webUrl"],containers:['issue.fieldsById.edges(node.fieldId: "project").node.project.name'],objectTypeName:['issue.fieldsById.edges(node.fieldId: "issuetype").node.issueType.name'],icon:['issue.fieldsById.edges(node.fieldId: "issuetype").node.issueType.avatar.medium'],key:["issue.key"],deduplicateId:["issue.id"]}},TrelloBoard:{hydratorPaths:{id:["id"],name:["boardName"],url:["boardUrl"],containers:["workspace.displayName"],deduplicateId:["objectId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/trello/board.svg"}},TrelloCard:{hydratorPaths:{id:["id"],name:["cardName"],url:["cardUrl"],containers:["list.name","list.board.name"],deduplicateId:["objectId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/trello/card.svg"}},DevOpsDocument:{hydratorPaths:{id:["id"],name:["displayName"],url:["webUrl"],icon:["type.iconUrl"]}},DevOpsPullRequestDetails:{hydratorPaths:{id:["id"],name:["title"],url:["url"],containers:["repositoryName"],key:["providerName"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/pull-request.svg"}},DevOpsDesign:{hydratorPaths:{id:["id"],name:["displayName"],url:["webUrl"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/design.svg"}},ExternalDocument:{hydratorPaths:{id:["thirdPartyId"],name:["displayName"],url:["url"],subtype:["type.category"],key:["parent.displayName"],containers:["createdBy.thirdPartyUser.name"],creator:["createdBy.thirdPartyUser.name"],providerId:["provider.providerId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/document.svg",thirdPartyIconPath:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/third-party-logos/{replaceProductName}/default.svg"}},ExternalWorkItem:{hydratorPaths:{id:["id"],name:["displayName"],url:["url"],providerId:["provider.providerId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/work-item.svg",thirdPartyIconPath:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/third-party-logos/{replaceProductName}/default.svg"}},ExternalPullRequest:{hydratorPaths:{id:["id"],name:["displayName"],url:["url"],providerId:["provider.providerId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/pull-request.svg",thirdPartyIconPath:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/third-party-logos/{replaceProductName}/default.svg"}},ExternalRemoteLink:{hydratorPaths:{id:["thirdPartyId"],name:["displayName"],url:["url"],subtype:["category"],containers:["createdBy.thirdPartyUser.name"],creator:["createdBy.thirdPartyUser.name"],providerId:["provider.providerId"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/graph/document.svg",thirdPartyIconPath:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/third-party-logos/{replaceProductName}/default.svg"}},MercuryFocusArea:{hydratorPaths:{id:["id"],name:["name"],url:["url"],key:["focusAreaType.name"],icon:["icon.url"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/mercury/focus-area.svg"}},MercuryPortfolio:{hydratorPaths:{id:["id"],name:["name"],url:["url"],key:["label"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/mercury/view.svg"}},RadarPosition:{hydratorPaths:{id:["id"],name:["worker.preferredName"],url:["url"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/talent/position.svg"}},RadarView:{hydratorPaths:{id:["id"],name:["viewName"],url:["url"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/talent/view.svg"}},CompassComponent:{hydratorPaths:{id:["id"],name:["name"],url:["url"],icon:["typeMetadata.iconUrl"],key:["typeMetadata.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/compass/logo.svg"}},BitbucketPullRequest:{hydratorPaths:{id:["id"],name:["pullRequestTitle"],url:["href"],key:["pullRequestTitle"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/bitbucket/logo.svg"}},LoomVideo:{hydratorPaths:{id:["id"],name:["name"],url:["loomUrl"],key:["owner.name"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/loom/logo.svg"}},AssetsObject:{hydratorPaths:{id:["id"],name:["label"],key:["displayTypename"],url:["links.web"],icon:["avatar.url48"],containers:["objectType.schema.name"],containersWithDisplayName:["objectType.schema.displayName"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/assets/logo.svg"}},AssetsObjectType:{hydratorPaths:{id:["id"],name:["assetsObjectTypeName"],displayName:["assetsObjectTypeDisplayName"],key:["displayTypename"],url:["links.web"],icon:["assetsObjectTypeIcon.url48"],containers:["schema.assetsSchemaName"],containersWithDisplayName:["schema.assetsSchemaDisplayName"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/assets/logo.svg"}},AssetsSchema:{hydratorPaths:{id:["id"],name:["assetsSchemaName"],displayName:["assetsSchemaDisplayName"],key:["displayTypename"],url:["links.web"]},staticFallbacks:{icon:"https://flight-deck-assets-bifrost.prod-east.frontend.public.atl-paas.net/assets/image/misc-icons/assets/logo.svg"}}},queryFragments:`
+
+  fragment townsquareGoal on TownsquareGoal {
+    id
+    key
+    name
+    url
+    iconData
+    status {
+      value
+      score
+    }
+  }
+
+
+  fragment townsquareProject on TownsquareProject {
+    id
+    key
+    name
+    url
+    iconData
+    state {
+      value
+    }
+  }
+
+
+  fragment townsquareComment on TownsquareComment {
+    id
+    url
+    container {
+      __typename
+      ...townsquareGoal
+      ...townsquareProject
+    }
+  }
+
+
+  fragment confluencePage on ConfluencePage {
+    id
+    title
+    pageId
+    subtype
+    links {
+      base
+      webUi
+    }
+    space {
+      name
+    }
+  }
+
+
+  fragment confluenceBlogPost on ConfluenceBlogPost {
+    id
+    title
+    blogPostId
+    links {
+      base
+      webUi
+    }
+    space {
+      name
+    }
+  }
+
+
+  fragment confluenceWhiteboard on ConfluenceWhiteboard {
+    id
+    title
+    whiteboardId
+    links {
+      base
+      webUi
+    }
+    space {
+      name
+    }
+  }
+
+
+  fragment confluenceDatabase on ConfluenceDatabase {
+    id
+    title
+    databaseId
+    links {
+      base
+      webUi
+    }
+    space {
+      name
+    }
+  }
+
+
+  fragment confluenceEmbed on ConfluenceEmbed {
+    id
+    title
+    embedId
+    links {
+      base
+      webUi
+    }
+    space {
+      name
+    }
+  }
+
+
+  fragment confluenceComment on ConfluenceComment {
+    id
+    links {
+      base
+      webUi
+    }
+    container {
+      __typename
+      ...confluenceBlogPost
+      ...confluencePage
+      ...confluenceWhiteboard
+    }
+  }
+
+
+  fragment confluenceFooterComment on ConfluenceFooterComment {
+    id
+    links {
+      base
+      webUi
+    }
+    container {
+      __typename
+      ...confluenceBlogPost
+      ...confluencePage
+      ...confluenceWhiteboard
+    }
+  }
+
+
+  fragment confluenceInlineComment on ConfluenceInlineComment {
+    id
+    links {
+      base
+      webUi
+    }
+    container {
+      __typename
+      ...confluenceBlogPost
+      ...confluencePage
+      ...confluenceWhiteboard
+    }
+  }
+
+
+fragment jiraIssue on JiraIssue {
+  id
+  key
+  webUrl
+  fieldsById(ids: ["summary", "issuetype", "project"]) {
+    edges {
+      node {
+        __typename
+        fieldId
+        ...jiraSingleLineTextField
+        ...jiraIssueTypeField
+        ...jiraProjectField
+      }
+    }
+  }
+  fieldsByIdOrAlias(idsOrAliases: ["status"]) @optIn(to: "JiraIssueFieldsByIdOrAlias") {
+    __typename
+    fieldId
+    ...jiraStatusField
+  }
+}
+fragment jiraSingleLineTextField on JiraSingleLineTextField {
+  text
+}
+fragment jiraIssueTypeField on JiraIssueTypeField {
+  issueType {
+    name
+    avatar {
+      medium
+    }
+  }
+}
+fragment jiraProjectField on JiraProjectField {
+  project {
+    name
+  }
+}
+fragment jiraStatusField on JiraStatusField {
+  status {
+    name
+    statusCategory {
+      colorName
+    }
+  }
+}
+
+
+fragment jiraPlatformComment on JiraPlatformComment {
+  commentId
+  webUrl
+  issue {
+    ...jiraIssue
+  }
+}
+
+
+fragment jiraServiceManagementComment on JiraServiceManagementComment {
+  commentId
+  webUrl
+  issue {
+    ...jiraIssue
+  }
+}
+
+
+fragment trelloBoard on TrelloBoard {
+  id
+  objectId
+  boardName: name
+  boardUrl: url
+  workspace {
+    id
+    displayName
+  }
+}
+
+
+fragment trelloCard on TrelloCard {
+  id
+  objectId
+  cardName: name
+  cardUrl: url
+  list {
+    id
+    name
+    board @optIn(to: "TrelloListBoard") {
+      id
+      name
+    }
+  }
+}
+
+
+        fragment graphDevOpsDocument on DevOpsDocument {
+          id
+          displayName
+          webUrl: url
+          type {
+            iconUrl
+          }
+        }
+    
+
+        fragment graphExternalDocument on ExternalDocument {
+            id
+            type {
+                category
+            }
+            displayName
+            parent @optIn(to: "ExternalDataDepotQueryV2"){
+                ...on ExternalDocument {
+                    displayName
+                }
+            }
+            url
+            provider {
+                providerId
+            }
+            createdBy {
+                thirdPartyUser {
+                    name
+                }
+            }
+            thirdPartyId
+        }
+    
+
+fragment graphPullRequest on DevOpsPullRequestDetails {
+  id
+  title
+  url
+  repositoryName
+  providerName
+}
+
+
+fragment graphExternalPullRequest on ExternalPullRequest {
+  id
+  displayName
+  url
+  pullRequestStatus: status
+  provider {
+    providerId
+  }
+}
+
+
+fragment graphExternalWorkItem on ExternalWorkItem {
+  id
+  displayName
+  url
+  workItemStatus: status
+  provider {
+    providerId
+  }
+}
+
+
+fragment graphDesign on DevOpsDesign {
+  id
+  displayName
+  webUrl: url
+}
+
+
+        fragment graphExternalRemoteLink on ExternalRemoteLink {
+            id
+            displayName
+            category
+            createdBy {
+                thirdPartyUser {
+                    name
+                }
+            }
+            url
+            provider {
+                providerId
+            }
+            thirdPartyId
+        }
+    
+
+    fragment mercuryFocusArea on MercuryFocusArea {
+        id
+        name
+        url
+        focusAreaType {
+            name
+        }
+        icon {
+            url
+        }
+    }
+    
+
+    fragment mercuryPortfolio on MercuryPortfolio {
+        id
+        name
+        url
+        label
+    }
+    
+
+    fragment radarPosition on RadarPosition {
+        id
+        worker {
+            preferredName
+        }
+        url
+    }
+    
+
+    fragment radarView on RadarView {
+        id
+        viewName
+        url
+    }
+    
+
+fragment compassComponent on CompassComponent {
+  id
+  name
+  url
+  typeMetadata {
+    iconUrl
+    name
+  }
+}
+
+
+fragment bitbucketPullRequest on BitbucketPullRequest {
+  id
+  pullRequestTitle: title
+  href
+  author {
+    picture
+  }
+}
+
+
+fragment loomVideo on LoomVideo {
+  id
+  name
+  loomUrl: url
+  owner {
+    name
+    picture
+  }
+}
+
+
+    fragment assetsObject on AssetsObject {
+      id
+      label
+      objectKey
+      links {
+        web
+      }
+      avatar {
+        url48
+      }
+      objectType {
+        name
+        displayName
+        schema {
+          name
+          displayName
+        }
+      }
+      displayTypename @optIn(to: "AssetsApFields")
+    }
+
+
+    fragment assetsObjectType on AssetsObjectType {
+      id
+      assetsObjectTypeName: name
+      assetsObjectTypeDisplayName: displayName
+      links {
+        web
+      }
+      assetsObjectTypeIcon: icon {
+        url48
+      }
+      schema {
+        id
+        assetsSchemaName: name
+        assetsSchemaDisplayName: displayName
+      }
+      displayTypename @optIn(to: "AssetsApFields")
+    }
+
+
+    fragment assetsSchema on AssetsSchema {
+      id
+      assetsSchemaKey: key
+      assetsSchemaName: name
+      assetsSchemaDisplayName: displayName
+      links {
+        web
+      }
+      displayTypename @optIn(to: "AssetsApFields")
+    }
+
+fragment activityItemEdge on ActivityItemEdge {
+  cursor
+  node {
+    id
+    object {
+      id
+      type
+      product
+      subProduct
+      rootContainerId
+      contributors {
+        profile {
+          name
+          picture
+          accountId
+        }
+      }
+      data {
+        __typename
+	...townsquareGoal
+	...townsquareProject
+	...townsquareComment
+	...confluencePage
+	...confluenceBlogPost
+	...confluenceWhiteboard
+	...confluenceDatabase
+	...confluenceEmbed
+	...confluenceComment
+	...confluenceFooterComment
+	...confluenceInlineComment
+	...jiraIssue
+	...jiraPlatformComment
+	...jiraServiceManagementComment
+	...trelloBoard
+	...trelloCard
+	...graphDevOpsDocument
+	...graphExternalDocument
+	...graphPullRequest
+	...graphExternalPullRequest
+	...graphExternalWorkItem
+	...graphDesign
+	...graphExternalRemoteLink
+	...mercuryFocusArea
+	...mercuryPortfolio
+	...radarPosition
+	...radarView
+	...compassComponent
+	...bitbucketPullRequest
+	...loomVideo
+	...assetsObject
+	...assetsObjectType
+	...assetsSchema
+      }
+    }
+    event {
+      id
+      timestamp
+      eventType
+      actor {
+        name
+        picture
+        accountId
+      }
+    }
+  }
+}
+fragment activityItemConnection on ActivityConnection {
+  edges {
+    ...activityItemEdge
+  }
+}
+
+`},p="prod",m={name:"recent-work-service",dimensions:{environmentType:p}},f=(0,o.A)(function e(t,r,n){var o=this;(0,i.A)(this,e),(0,s.A)(this,"fetchConfig",(0,a.A)(l().mark(function e(){var t,r,n;return l().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,o.fetchArtifact();case 1:return r=(t=e.sent).queryFragments,n=t.hydrators,e.abrupt("return",{fragments:r,hydrators:n});case 2:case"end":return e.stop()}},e)}))),this.artifactFetch=n,new u.A(r||"recent-work-client",{handlers:t},[{name:"recent-work-service",dimensions:{environmentType:p},value:d}]),this.artifactFetch=n},[{key:"fetchArtifact",value:(n=(0,a.A)(l().mark(function e(){return l().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if(!this.artifactFetch){e.next=1;break}return e.abrupt("return",d);case 1:return e.abrupt("return",d);case 2:case"end":return e.stop()}},e,this)})),function(){return n.apply(this,arguments)})}])}}]);

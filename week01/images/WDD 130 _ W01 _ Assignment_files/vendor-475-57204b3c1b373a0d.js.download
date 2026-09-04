@@ -1,0 +1,2616 @@
+"use strict";(self.rspackChunk_loomhq_web_client=self.rspackChunk_loomhq_web_client||[]).push([[90575],{518646(e,r,t){var n,a=((n={}).LIVE="LIVE",n);t.d(r,{X:()=>a})},621673(e,r,t){var n=t(98812);function a(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function o(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?a(Object(t),!0).forEach(function(r){(0,n.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):a(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}function i(e){return JSON.stringify({atlWorkspaceId:e.atlWorkspaceId,tenantId:e.tenantId,product:e.product})}function s(e){var r=e.cloudId,t=e.product,n=void 0===t?"platform":t,a=e.activationId;if(r){var s=a?"ari:cloud:".concat(n,":").concat(r,":workspace/").concat(a):void 0;return{"atl-attribution":i(o(o({},s?{atlWorkspaceId:s}:{}),{},{tenantId:r,product:n}))}}}t.d(r,{T:()=>i,t:()=>s})},316090(e,r,t){var n=t(606100),a=t(98812),o=t(345261),i=t.n(o),s=t(22099);function c(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function u(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?c(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):c(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}function l(e){return d.apply(this,arguments)}function d(){return(d=(0,n.A)(i().mark(function e(r){var t,n,a,o,c,l,d,p,y;return i().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.graphQuery,n=r.variables,a=r.operationName,c=void 0===(o=r.aggAbsoluteUrl)?"/gateway/api/graphql":o,l=r.headers,d={},p={requestInit:{method:"POST",headers:u({"Content-Type":"application/json"},l),body:JSON.stringify({operationName:a,query:t,variables:n})},queryParams:u({},a&&{q:a}),reportTracingHeaders:function(e){Object.assign(d,e)}},e.next=1,s.Wp.requestService({url:c},p);case 1:var i;return y=e.sent,e.abrupt("return",(i=d,y&&0!==Object.keys(i).length?u(u({},y),{},{gatewayTracingHeaders:u(u({},y.gatewayTracingHeaders),i)}):y));case 2:case"end":return e.stop()}},e)}))).apply(this,arguments)}t.d(r,{g:()=>l})},108321(e,r,t){var n,a=t(98812),o=t(606100),i=t(345261),s=t.n(i),c=t(301463),u=t(316090),l=t(318051);function d(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var p="SearchPageAssetsObjectTypesQuery",y=(0,l.L)(),m=(n=(0,o.A)(s().mark(function e(r,t){return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.abrupt("return",y.inMemoryDecorator("".concat(r),(0,o.A)(s().mark(function e(){var n,o;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,(0,u.g)({graphQuery:"query ".concat(p,`(
+	$objectTypeARIs: [ID!]!) {
+		assets_objectTypesByIds(ids: $objectTypeARIs) {
+    		id
+    		name
+    		`).concat((0,c.fg)("cdm_ga")?"displayName":"",`
+    		sequentialId @optIn(to: "AssetsApFields")
+    		icon {
+      			url16
+    		}
+    		schema {
+      			name
+      			`).concat((0,c.fg)("cdm_ga")?"displayName":"",`
+    		}
+  		}
+	}`),variables:{objectTypeARIs:r},operationName:p,headers:function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?d(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):d(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({"X-ExperimentalApi":"AssetsObjectTypes"},t)});case 1:if(!(null==(n=(o=e.sent).errors)?void 0:n.some(function(e){return e}))){e.next=2;break}return e.abrupt("return",Promise.reject(o));case 2:return e.abrupt("return",o);case 3:case"end":return e.stop()}},e)}))));case 1:case"end":return e.stop()}},e)})),function(e,r){return n.apply(this,arguments)});t.d(r,{c:()=>m})},710080(e,r,t){var n,a=t(98812),o=t(606100),i=t(345261),s=t.n(i),c=t(301463),u=t(316090);function l(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var d=(0,t(318051).L)(),p=(n=(0,o.A)(s().mark(function e(r,t){return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.abrupt("return",d.inMemoryDecorator("".concat(r),(0,o.A)(s().mark(function e(){var n,o;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,(0,u.g)({graphQuery:"query ".concat("SearchPageAssetsSchemasQuery",`(
+	$schemaARIs: [ID!]!) {
+		assets_schemasByIds(ids: $schemaARIs) {
+    		id
+    		key
+    		name
+    		`).concat((0,c.fg)("cdm_ga")?"displayName":"",`
+    		sequentialId @optIn(to: "AssetsApFields")
+  		}
+	}`),variables:{schemaARIs:r},headers:function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?l(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):l(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({"X-ExperimentalApi":"AssetsSchemas"},t)});case 1:if(!(null==(n=(o=e.sent).errors)?void 0:n.some(function(e){return e}))){e.next=2;break}return e.abrupt("return",Promise.reject(o));case 2:return e.abrupt("return",o);case 3:case"end":return e.stop()}},e)}))));case 1:case"end":return e.stop()}},e)})),function(e,r){return n.apply(this,arguments)});t.d(r,{q:()=>p})},100158(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="SearchPageConfluencePagesQuery",u=function(e,r){return s.inMemoryDecorator(e.join(","),(0,n.A)(o().mark(function t(){var n,a;return o().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(0!==e.length){t.next=1;break}return t.abrupt("return",{data:{confluence:{pages:[]}}});case 1:return t.next=2,(0,i.g)({graphQuery:`
+query `.concat(c,`($pageIds: [ID]!) {
+  confluence {
+    pages(ids: $pageIds) {
+      id
+      title
+      type
+      links {
+        base
+      }
+    }
+  }
+}
+`),variables:{pageIds:e},operationName:c,headers:r});case 2:if(!(null==(n=(a=t.sent).errors)?void 0:n.some(function(e){return e}))){t.next=3;break}return t.abrupt("return",Promise.reject(a));case 3:return t.abrupt("return",a);case 4:case"end":return t.stop()}},t)})))};t.d(r,{V:()=>u})},809321(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="SearchLabelsQuery",u=function(e,r,t,a){return s.inMemoryDecorator("".concat(e,"::").concat(r),(0,n.A)(o().mark(function n(){var s,u;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=1,(0,i.g)({graphQuery:`
+query `.concat(c,`($cloudId: ID! $searchText: String!, $limit: Int) {
+  confluence {
+    searchLabels(cloudId: $cloudId, searchText: $searchText, limit: $limit) @optIn(to: "ConfluenceExperimentalSearchLabels") {
+	  otherLabels {
+        label
+      }
+      suggestedLabels {
+        label
+      }
+    }
+  }
+}
+`),variables:{cloudId:e,searchText:r,limit:t},operationName:c,headers:a});case 1:if(!(null==(s=(u=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=2;break}return n.abrupt("return",Promise.reject(u));case 2:return n.abrupt("return",u);case 3:case"end":return n.stop()}},n)})))};t.d(r,{O:()=>u})},310757(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="ConfluenceSpaceKeysToIdsQuery",u=function(e){var r=e.spaceKeys,t=e.cloudId,a=e.headers;return s.inMemoryDecorator("".concat(r.join(","),"-").concat(t),(0,n.A)(o().mark(function e(){var n,s;return o().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,(0,i.g)({graphQuery:`
+query `.concat(c,`($spaceKeys: [String]) {
+  spaces(spaceKeys: $spaceKeys) {
+    nodes {
+      id
+ 	}
+  }
+}
+`),variables:{spaceKeys:r},operationName:c,aggAbsoluteUrl:"/gateway/api/ex/confluence/".concat(t,"/graphql"),headers:a});case 1:if(!(null==(n=(s=e.sent).errors)?void 0:n.some(function(e){return e}))){e.next=2;break}return e.abrupt("return",Promise.reject(s));case 2:return e.abrupt("return",s);case 3:case"end":return e.stop()}},e)})))};t.d(r,{i:()=>u})},124001(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="SearchPageConfluenceSpacesQuery",u=function(e,r){return s.inMemoryDecorator(e.join(","),(0,n.A)(o().mark(function t(){var n,a;return o().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(0!==e.length){t.next=1;break}return t.abrupt("return",{data:{confluence:{spaces:[]}}});case 1:return t.next=2,(0,i.g)({graphQuery:`
+query `.concat(c,`($spaceIds: [ID]!) {
+  confluence {
+    spaces(ids: $spaceIds) {
+      id
+      spaceId
+      name
+      key
+      links {
+        base
+      }
+      icon {
+        path
+      }
+    }
+  }
+}
+`),variables:{spaceIds:e},operationName:c,headers:r});case 2:if(!(null==(n=(a=t.sent).errors)?void 0:n.some(function(e){return e}))){t.next=3;break}return t.abrupt("return",Promise.reject(a));case 3:return t.abrupt("return",a);case 4:case"end":return t.stop()}},t)})))};t.d(r,{e:()=>u})},480340(e,r,t){var n=t(98812),a=t(606100),o=t(345261),i=t.n(o),s=t(316090);function c(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function u(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?c(Object(t),!0).forEach(function(r){(0,n.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):c(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}var l=(0,t(318051).L)(),d="SearchPageJiraProjectQuery",p="query ".concat(d,`($projectIds: [ID!]!) {
+  jira {
+    jiraProjects(ids: $projectIds) {
+			id
+			projectId
+      name
+      avatar {
+        small
+      }
+    }
+  }
+}`),y=function(e,r){return l.inMemoryDecorator(e.join(","),(0,a.A)(i().mark(function t(){var n,a;return i().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(0!==e.length){t.next=1;break}return t.abrupt("return",{data:{jira:{jiraProjects:[]}}});case 1:return t.next=2,(0,s.g)({graphQuery:p,variables:{projectIds:e},operationName:d,headers:r});case 2:if(!(null==(n=(a=t.sent).errors)?void 0:n.some(function(e){return e}))){t.next=3;break}return t.abrupt("return",Promise.reject(a));case 3:return t.abrupt("return",m(a));case 4:case"end":return t.stop()}},t)})))},m=function(e){var r,t=null==(r=e.data)||null==(r=r.jira.jiraProjects)?void 0:r.filter(function(e){return e.projectId});return u(u({},e),{},{data:{jira:{jiraProjects:t}}})};t.d(r,{d:()=>y})},436377(e,r,t){t.d(r,{m:()=>m});var n,a=t(98812),o=t(606100),i=t(345261),s=t.n(i),c=t(316090),u=function(e){var r=e.siteId,t=e.orgId,n=e.query,a=e.experience,o=e.model,i=e.includePatternType,s=[r,t,n,a];return o&&s.push(o),s.push("includePatternType=".concat(i)),s.join(":")},l=(0,t(318051).L)();function d(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var p="KnowledgeDiscoveryJiraIntentDetectionQuery",y="query ".concat(p,`(
+	$siteId: String!
+	$orgId: String!
+	$query: String!
+	$experience: KnowledgeDiscoveryJiraSearchExperience!
+	$model: KnowledgeDiscoveryJiraIntentDetectionModel!
+	$sessionId: String
+	$includePatternType: Boolean!
+) {
+	knowledgeDiscovery {
+		jiraIntentDetection(
+			siteId: $siteId
+			orgId: $orgId
+			query: $query
+			experience: $experience
+			model: $model
+			sessionId: $sessionId
+		) @optIn(to: "KnowledgeDiscovery Jira Intent Detection") {
+			__typename
+			... on KnowledgeDiscoveryJiraIntentDetection {
+				searchClassification {
+					type
+					pattern @include(if: $includePatternType)
+				}
+			}
+			... on QueryError {
+				message
+			}
+		}
+	}
+}`),m=(n=(0,o.A)(s().mark(function e(r,t){var n;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return n=u(r),e.abrupt("return",l.inMemoryDecorator(n,(0,o.A)(s().mark(function e(){var n,o,i,u;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=1,(0,c.g)({graphQuery:y,variables:r,operationName:p,headers:function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?d(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):d(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({"X-ExperimentalApi":"KnowledgeDiscovery"},t)});case 1:if(!(null==(n=(i=e.sent).errors)?void 0:n.some(function(e){return e}))){e.next=2;break}return e.abrupt("return",Promise.reject(i));case 2:if((null==(u=null==(o=i.data)?void 0:o.knowledgeDiscovery.jiraIntentDetection)?void 0:u.__typename)!=="QueryError"){e.next=3;break}return e.abrupt("return",Promise.reject(i));case 3:return e.abrupt("return",i);case 4:case"end":return e.stop()}},e)}))));case 1:case"end":return e.stop()}},e)})),function(e,r){return n.apply(this,arguments)})},393445(e,r,t){function n(e){return(null==e?void 0:e.__typename)==="KnowledgeDiscoveryJiraIntentDetection"}t.d(r,{F:()=>n})},496813(e,r,t){var n={GNIN_HEURISTIC:"GNIN_HEURISTIC",FPS_HEURISTIC:"FPS_HEURISTIC"};t.d(r,{d:()=>n})},157742(e,r,t){var n={GNIN:"GNIN",FPS:"FPS"};t.d(r,{h:()=>n})},277798(e,r,t){var n={QUICK_FIND:"QUICK_FIND"};t.d(r,{N:()=>n})},30355(e,r,t){var n,a=t(606100),o=t(98812),i=t(345261),s=t.n(i),c=t(316090);function u(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function l(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?u(Object(t),!0).forEach(function(r){(0,o.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):u(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}var d="LoomRovoFoldersSearchQuery",p=`
+	query `.concat(d,`(
+		$siteId: ID!
+		$query: String
+		$spaceId: ID
+		$includeDefaultFolders: Boolean
+	) {
+		loom_foldersSearch(
+			siteId: $siteId
+			query: $query
+			spaceId: $spaceId
+			includeDefaultFolders: $includeDefaultFolders
+		) {
+			id
+			name
+			parentSpaceId
+		}
+	}
+`),y=(n=(0,a.A)(s().mark(function e(r){var t,n,a,o,i,u,y,m,f;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.variables,n=r.aggAbsoluteUrl,a=r.headers,o=t.siteId,i=t.query,u=t.spaceId,y=t.includeDefaultFolders,m=t.limit,e.next=1,(0,c.g)({variables:{siteId:o,query:i,spaceId:u,includeDefaultFolders:y},aggAbsoluteUrl:n,graphQuery:p,operationName:d,headers:a});case 1:var s;return f=e.sent,e.abrupt("return","number"==typeof(s=m)?l(l({},f),{},{data:f.data?l(l({},f.data),{},{loom_foldersSearch:f.data.loom_foldersSearch.slice(0,s)}):f.data}):f);case 2:case"end":return e.stop()}},e)})),function(e){return n.apply(this,arguments)});t.d(r,{L:()=>y})},725075(e,r,t){var n,a=t(606100),o=t(98812),i=t(345261),s=t.n(i),c=t(316090);function u(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function l(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?u(Object(t),!0).forEach(function(r){(0,o.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):u(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}var d="LoomRovoSpacesSearchQuery",p=`
+	query `.concat(d,`($siteId: ID!, $query: String) {
+		loom_spacesSearch(siteId: $siteId, query: $query) {
+			id
+			name
+			url
+		}
+	}
+`),y=(n=(0,a.A)(s().mark(function e(r){var t,n,a,o,i,u,y;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.variables,n=r.aggAbsoluteUrl,a=r.headers,o=t.siteId,i=t.query,u=t.limit,e.next=1,(0,c.g)({variables:{siteId:o,query:i},aggAbsoluteUrl:n,graphQuery:p,operationName:d,headers:a});case 1:var s;return y=e.sent,e.abrupt("return","number"==typeof(s=u)?l(l({},y),{},{data:y.data?l(l({},y.data),{},{loom_spacesSearch:y.data.loom_spacesSearch.slice(0,s)}):y.data}):y);case 2:case"end":return e.stop()}},e)})),function(e){return n.apply(this,arguments)});t.d(r,{z:()=>y})},597958(e,r,t){var n=t(316090),a="LoomRovoSpacesByIdsQuery",o=`
+	query `.concat(a,`($ids: [ID!]!) {
+		loom_spaces(ids: $ids) {
+			id
+			name
+			url
+		}
+	}
+`),i=function(e){var r=e.variables,t=e.aggAbsoluteUrl,i=e.headers;return(0,n.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:a,headers:i})};t.d(r,{B:()=>i})},872295(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="FocusAreaTypes",u="query ".concat(c,`($cloudId: ID!) {
+  mercury {
+    focusAreaTypes(cloudId: $cloudId) @optIn(to: "Mercury") {
+      id
+      name
+      hierarchyLevel
+    }
+  }
+}`),l=function(e,r){return s.inMemoryDecorator(e,(0,n.A)(o().mark(function t(){var n,a;return o().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(e){t.next=1;break}return t.abrupt("return",{data:{mercury:{focusAreaTypes:[]}}});case 1:return t.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e},operationName:c,headers:r});case 2:if(!(null==(n=(a=t.sent).errors)?void 0:n.some(function(e){return e}))){t.next=3;break}return t.abrupt("return",Promise.reject(a));case 3:return t.abrupt("return",a);case 4:case"end":return t.stop()}},t)})))};t.d(r,{Q:()=>l})},148778(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="FocusAreas",u="query ".concat(c,`($cloudId: ID!, $q: String, $first: Int, $sort: [MercuryFocusAreaSort]) {
+  mercury {
+    focusAreas(cloudId: $cloudId, q: $q, first: $first, sort: $sort) @optIn(to: "Mercury") {
+      edges {
+        node {
+          id
+          uuid
+          name
+          status {
+		    key            
+          }
+          health {
+            key
+          }
+          focusAreaType {
+		  	name
+            hierarchyLevel
+          }
+		  owner {
+            name
+          }
+        }
+      }
+    }
+  }
+}`),l=function(e,r){var t=arguments.length>2&&void 0!==arguments[2]?arguments[2]:20,a=arguments.length>3&&void 0!==arguments[3]?arguments[3]:[{field:"FOCUS_AREA_TYPE",order:"ASC"},{field:"NAME",order:"ASC"}],l=arguments.length>4?arguments[4]:void 0;return s.inMemoryDecorator("".concat(e,"-").concat(r,"-").concat(t,"-").concat(JSON.stringify(a)),(0,n.A)(o().mark(function n(){var s,d;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:if(e){n.next=1;break}return n.abrupt("return",{data:{mercury:{focusAreas:{edges:[]}}}});case 1:return n.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e,q:r,first:t,sort:a},operationName:c,headers:l});case 2:if(!(null==(s=(d=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=3;break}return n.abrupt("return",Promise.reject(d));case 3:return n.abrupt("return",d);case 4:case"end":return n.stop()}},n)})))};t.d(r,{_:()=>l})},450940(e,r,t){t.d(r,{Fj:()=>C});var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=t(371431),c=t(732645),u="quick-find-recent-activities",l=t(301463),d=`
+  fragment ConfluencePageFragment on ConfluencePage {
+    __typename
+    title
+    pageStatus: status
+    subtype
+    ancestors {
+      __typename
+      id
+      title
+    }
+    links {
+      __typename
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,p=`
+  fragment ConfluenceBlogPostFragment on ConfluenceBlogPost {
+    __typename
+    title
+    blogStatus: status
+    links {
+      __typename
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,y=`
+  fragment ConfluenceWhiteboardFragment on ConfluenceWhiteboard {
+    __typename
+    title
+    links {
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,m=`
+  fragment ConfluenceSlideFragment on ConfluenceSlide {
+    __typename
+    title
+    links {
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,f=`
+  fragment AtlasProjectFragment on TownsquareProject {
+    __typename
+    key
+    name
+    url
+    iconData
+  }
+`,g=`
+  fragment AtlasGoalFragment on TownsquareGoal {
+    __typename
+    key
+    name
+    url
+    iconData
+  }
+`,h=`
+  fragment JiraSingleIssueLineTextFieldFragment on JiraSingleLineTextField {
+    text
+		issue @include(if: $includeJiraIssueMetadata) {
+			projectField {
+				project {
+					name
+				}
+			}
+			issueTypeField {
+				issueType {
+					name
+				}
+			}
+		}
+  }
+`,b=`
+  fragment JiraIssueFragment on JiraIssue {
+    __typename
+    key
+    webUrl
+    statusCategory {
+      name,
+      colorName
+    }
+    issueType {
+      avatar {
+        small
+      }
+    }
+    fieldsById(ids: ["summary"]) {
+      edges {
+        node {
+          __typename
+          ...JiraSingleIssueLineTextFieldFragment
+        }
+      }
+    }
+  }
+  `.concat(h,`
+`),I=`
+  fragment GraphDocumentFragment on ExternalDocument {
+    id
+    type {
+        category
+    }
+    displayName
+    parent @optIn(to: "ExternalDataDepotQueryV2"){
+        ... on ExternalDocument {
+            displayName
+        }
+    }
+    url
+    provider {
+        providerId
+    }
+  }
+`,v=`
+  fragment GraphRemoteLinkFragment on ExternalRemoteLink {
+	  id
+		displayName
+		category @optIn(to: "ExternalDataDepotQueryV2")
+		url
+    provider {
+			providerId
+		}
+  }
+`,S=`
+  fragment LoomVideoFragment on LoomVideo {
+    name
+    loomUrl: url
+  }
+`,A=`
+  fragment ExternalPullRequestFragment on ExternalPullRequest {
+    id
+    displayName
+    url
+    status
+    provider {
+      providerId
+    }
+  }
+`,O=`
+  fragment ExternalWorkItemFragment on ExternalWorkItem {
+    id
+    displayName
+    url
+    workItemStatus: status
+    provider {
+      providerId
+    }
+  }
+`,_=`
+  fragment AssetsObjectFragment on AssetsObject {
+    id
+		displayTypename @optIn(to: "AssetsApFields")
+    links {
+      web
+    }
+    assetsLabel: label
+    objectKey
+    assetsIcon: avatar {
+      url48
+    }
+    objectType {
+      schema {
+        name
+        `.concat((0,l.fg)("cdm_ga")?"assetsSchemaDisplayName: displayName":"",`
+      }
+    }
+  }
+`),E=`
+fragment AssetsObjectTypeFragment on AssetsObjectType {
+	id
+	displayTypename @optIn(to: "AssetsApFields")
+	links {
+		web
+	}
+	assetsLabel: name
+	`.concat((0,l.fg)("cdm_ga")?"assetsDisplayName: displayName":"",`
+	assetsIcon: icon {
+		url48
+	}
+	schema {
+		assetsSchemaName: name
+		`).concat((0,l.fg)("cdm_ga")?"assetsSchemaDisplayName: displayName":"",`
+	}
+}
+`),D=`
+fragment AssetsSchemaFragment on AssetsSchema {
+	id
+	displayTypename @optIn(to: "AssetsApFields")
+	links {
+		web
+	}
+	assetsLabel: name
+	`.concat((0,l.fg)("cdm_ga")?"assetsDisplayName: displayName":"",`
+}
+`),P="QuickFindActivitiesQuery",$=`
+  query `.concat(P,`(
+    $filteredProducts: [String!]
+    $filteredObjectTypes: [String!]
+    $filteredEventTypes: [String!]
+    $itemsLimit: Int!
+    $filteredRootContainerIds: [ID!]
+    $after: String
+    $includeJiraIssueMetadata: Boolean = false
+  ) {
+    activity {
+      myActivity {
+        all(
+          filter: {
+            arguments: {
+              products: $filteredProducts
+              objectTypes: $filteredObjectTypes
+              eventTypes: $filteredEventTypes
+            }
+            rootContainerIds: $filteredRootContainerIds
+          }
+          first: $itemsLimit
+          after: $after
+        ) {
+          __typename
+          edges {
+            cursor
+            __typename
+            node {
+              __typename
+              object {
+                __typename
+                id
+                type
+                product
+                data {
+                  __typename
+                  ...ConfluencePageFragment
+                  ...ConfluenceBlogPostFragment
+                  ...ConfluenceWhiteboardFragment
+                  `).concat((0,l.fg)("quick_find_confluence_slide_in_recents")?"...ConfluenceSlideFragment":"",`
+                  ...AtlasProjectFragment
+                  ...AtlasGoalFragment
+                  ...JiraIssueFragment
+                  ...GraphDocumentFragment
+									...GraphRemoteLinkFragment
+									...LoomVideoFragment
+									...ExternalPullRequestFragment
+									...ExternalWorkItemFragment
+                  `).concat((0,l.fg)("assets_rovo_search_all")?"...AssetsObjectFragment":"",`
+									`).concat((0,l.fg)("assets_rovo_search_all")?"...AssetsObjectTypeFragment":"",`
+									`).concat((0,l.fg)("assets_rovo_search_all")?"...AssetsSchemaFragment":"",`
+                }
+              }
+              event {
+                __typename
+                eventType
+                timestamp
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  `).concat(d,`
+  `).concat(p,`
+  `).concat(y,`
+  `).concat((0,l.fg)("quick_find_confluence_slide_in_recents")?m:"",`
+  `).concat(f,`
+  `).concat(g,`
+  `).concat(b,`
+  `).concat(I,`
+	`).concat(v,`
+	`).concat(S,`
+	`).concat(A,`
+	`).concat(O,`
+  `).concat((0,l.fg)("assets_rovo_search_all")?_:"",`
+	`).concat((0,l.fg)("assets_rovo_search_all")?E:"",`
+	`).concat((0,l.fg)("assets_rovo_search_all")?D:"",`
+`),R=(0,c.s)({name:u}),x=R.refreshOnAccessDecorator;R.clear;var C=function(e){var r,t=e.variables,a=e.aggAbsoluteUrl,c=e.headers,l=e.expiration,d=e.onlyRefreshIfExpired,p=e.returnExpired,y=e.analyticsCallback,m=e.networkCallbacks,f=(0,s.W)("".concat(u,"|").concat(JSON.stringify(t))).toString(),g=function(e,r){var t;x({key:f,supplier:(t=(0,n.A)(o().mark(function r(){return o().wrap(function(r){for(;;)switch(r.prev=r.next){case 0:return r.abrupt("return",e);case 1:case"end":return r.stop()}},r)})),function(){return t.apply(this,arguments)}),returnExpired:!1,onlyRefreshIfExpired:!1,expiration:r})};return x({key:f,supplier:(r=(0,n.A)(o().mark(function e(){var r,n;return o().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.prev=0,e.next=1,(0,i.g)({variables:t,aggAbsoluteUrl:a,graphQuery:$,operationName:P,headers:c});case 1:return g(r=e.sent,3e5),e.abrupt("return",r);case 2:throw e.prev=2,g(Promise.reject(n=e.catch(0)),5e3),n;case 3:case"end":return e.stop()}},e,null,[[0,2]])})),function(){return r.apply(this,arguments)}),expiration:l,onlyRefreshIfExpired:d,returnExpired:p,analyticsCallback:y,networkCallbacks:m})}},530461(e,r,t){var n,a=((n={}).JIRA="jira",n.CONFLUENCE="confluence",n.ATLAS="townsquare",n.GRAPH="graph",n.ASSETS="assets",n.GITHUB="github",n.LOOM="loom",n),o=function(e){return"remote-link"===e.type},i=function(e){return"document"===e.type},s=function(e){return"graph"===e.product},c=function(e){return"confluence"===e.product||"jira"===e.product||"townsquare"===e.product},u=function(e){return e.product===a.ASSETS},l=function(e){return e.product===a.LOOM},d=function(e){return e.product===a.GRAPH&&"pull-request"===e.type},p=function(e){return e.product===a.GRAPH&&"work-item"===e.type};t.d(r,{JS:()=>i,Xp:()=>c,gA:()=>s,pw:()=>l,rv:()=>u,s:()=>o,sX:()=>p,uo:()=>d})},210742(e,r,t){t.d(r,{O_:()=>v});var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=t(371431),c=t(732645),u=t(301463),l=`
+  fragment ConfluencePageFragment on ConfluencePage {
+    __typename
+    id
+    title
+    type
+    subtype
+    links {
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,d=`
+  fragment ExternalDocumentFragment on ExternalDocument {
+    __typename
+    id
+    displayName
+    url
+    documentType: type {
+      category
+    }
+    parent @optIn(to: "ExternalDataDepotQueryV2") {
+      ... on ExternalDocument {
+        displayName
+      }
+    }
+    provider {
+      providerId
+    }
+  }
+`,p=`
+  fragment JiraIssueFragment on JiraIssue {
+    __typename
+    id
+    key
+    summary
+    webUrl
+    issueTypeAvatarUrl
+    issueType {
+      name
+    }
+    project {
+      name
+    }
+  }
+`,y=`
+  fragment ExternalPullRequestFragment on ExternalPullRequest {
+    __typename
+    id
+    displayName
+    url
+    status
+    provider {
+      providerId
+    }
+  }
+`,m="QuickFindRecommendedDocumentsQuery",f=function(){var e=(0,u.fg)("quick_find_recommendations_for_issue_pr");return`
+  query `.concat(m,` (
+    $userId: String!,
+    $tenantId: String!,
+    $caller: String!,
+    $maxNumberOfResults: Int!,
+    $featureServiceModel: String
+  ) {
+    contextService {
+      quickfindUserRecommendations(
+        recommendationsQuery: {
+          context: {
+            userId: $userId
+            tenantId: $tenantId
+          }, modelRequestParams: {
+            caller: $caller
+            experience: "recommendedExternalDocument"
+            featureServiceModel: $featureServiceModel
+          },
+          requestingUserId: $userId
+          maxNumberOfResults: $maxNumberOfResults
+        }
+      ) {
+        id
+        score
+        reason
+        object {
+          ...ConfluencePageFragment
+          ...ExternalDocumentFragment
+          `).concat(e?"...JiraIssueFragment":"",`
+          `).concat(e?"...ExternalPullRequestFragment":"",`
+        }
+      }
+    }
+  }
+  `).concat(l,`
+  `).concat(d,`
+  `).concat(e?p:"",`
+  `).concat(e?y:"",`
+`)},g="quick-find-recommended-documents",h=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers;return(0,i.g)({variables:r,aggAbsoluteUrl:t,graphQuery:f(),operationName:m,headers:n})},b=(0,c.s)({name:g}),I=b.refreshOnAccessDecorator;b.clear;var v=function(e){var r,t=e.variables,a=e.aggAbsoluteUrl,i=e.expiration,c=e.onlyRefreshIfExpired,u=e.returnExpired,l=e.headers,d=(0,s.W)("".concat(g,"|").concat(JSON.stringify(t))).toString(),p=function(e,r){var t;I({key:d,supplier:(t=(0,n.A)(o().mark(function r(){return o().wrap(function(r){for(;;)switch(r.prev=r.next){case 0:return r.abrupt("return",e);case 1:case"end":return r.stop()}},r)})),function(){return t.apply(this,arguments)}),returnExpired:!1,onlyRefreshIfExpired:!1,expiration:r})};return I({key:d,supplier:(r=(0,n.A)(o().mark(function e(){var r,n;return o().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.prev=0,e.next=1,h({variables:t,aggAbsoluteUrl:a,headers:l});case 1:return p(r=e.sent,3e5),e.abrupt("return",r);case 2:throw e.prev=2,p(Promise.reject(n=e.catch(0)),5e3),n;case 3:case"end":return e.stop()}},e,null,[[0,2]])})),function(){return r.apply(this,arguments)}),expiration:i,onlyRefreshIfExpired:c,returnExpired:u})}},947580(e,r,t){t.d(r,{kI:()=>h});var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=t(371431),c=t(732645),u=`
+  fragment ConfluencePageFragment on ConfluencePage {
+    __typename
+    id
+    title
+    type
+    subtype
+    links {
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,l=`
+  fragment ConfluenceBlogPostFragment on ConfluenceBlogPost {
+    __typename
+    id
+    title
+    type
+    links {
+      base
+      webUi
+    }
+    space {
+      id
+      name
+    }
+  }
+`,d="QuickFindUserDocumentsQuery",p=`
+  query `.concat(d,` (
+    $userId: String!,
+    $tenantId: String!,
+    $caller: String!,
+    $maxNumberOfResults: Int!
+  ) {
+    smarts {
+      recommendedObject(
+        recommendationsQuery: {
+          context: {
+            userId: $userId
+            tenantId: $tenantId
+          }, modelRequestParams: {
+            caller: $caller
+            experience: "ConfUserPages"
+          }, 
+          requestingUserId: $userId 
+          maxNumberOfResults: $maxNumberOfResults
+        }
+      ) {
+        id
+        score
+        reason
+        object {
+          ...ConfluencePageFragment
+          ...ConfluenceBlogPostFragment
+        }
+      }
+    }
+  }
+  `).concat(u,`
+  `).concat(l,`
+`),y="quick-find-user-documents",m=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers;return(0,i.g)({variables:r,aggAbsoluteUrl:t,graphQuery:p,operationName:d,headers:n})},f=(0,c.s)({name:y}),g=f.refreshOnAccessDecorator;f.clear;var h=function(e){var r,t=e.variables,a=e.aggAbsoluteUrl,i=e.expiration,c=e.onlyRefreshIfExpired,u=e.returnExpired,l=e.headers,d=(0,s.W)("".concat(y,"|").concat(JSON.stringify(t))).toString(),p=function(e,r){var t;g({key:d,supplier:(t=(0,n.A)(o().mark(function r(){return o().wrap(function(r){for(;;)switch(r.prev=r.next){case 0:return r.abrupt("return",e);case 1:case"end":return r.stop()}},r)})),function(){return t.apply(this,arguments)}),returnExpired:!1,onlyRefreshIfExpired:!1,expiration:r})};return g({key:d,supplier:(r=(0,n.A)(o().mark(function e(){var r,n;return o().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.prev=0,e.next=1,m({variables:t,aggAbsoluteUrl:a,headers:l});case 1:return p(r=e.sent,3e5),e.abrupt("return",r);case 2:throw e.prev=2,p(Promise.reject(n=e.catch(0)),5e3),n;case 3:case"end":return e.stop()}},e,null,[[0,2]])})),function(){return r.apply(this,arguments)}),expiration:i,onlyRefreshIfExpired:c,returnExpired:u})}},65155(e,r,t){t.d(r,{av:()=>m,lB:()=>f,$c:()=>p,uZ:()=>y});var n=t(316090),a="KnowledgeDiscoveryZeroQueries",o=`
+  query `.concat(a,`($cloudId: String!, $product: KnowledgeDiscoveryProduct) {
+		knowledgeDiscovery @optIn(to: "KnowledgeDiscovery Get Zero Queries") {
+			zeroQueries(cloudId: $cloudId, product: $product) {
+                __typename
+                ... on KnowledgeDiscoveryZeroQueries {
+                    zeroQueries {
+                        query
+                        type
+						product
+						accountId
+						avatarUrl
+						dateRange
+					}
+                }
+            }
+		}
+	}
+`),i="MarkZeroQueryInteracted",s=`
+	mutation `.concat(i,`($input: KnowledgeDiscoveryMarkZeroQueryInteractedInput!) {
+		knowledgeDiscovery @optIn(to: "KnowledgeDiscovery Mark Zero Query Interacted") {
+			markZeroQueryInteracted(input: $input) {
+				success
+				errors {
+					message
+					extensions {
+						errorType
+						statusCode
+					}
+				}
+			}
+		}
+	}
+`),c="KnowledgeDiscoveryZeroQueriesV1",u=`
+  query `.concat(c,`($cloudId: String!, $product: KnowledgeDiscoveryProduct) {
+		knowledgeDiscovery @optIn(to: "KnowledgeDiscovery Get Zero Queries V1") {
+			zeroQueriesV1(cloudId: $cloudId, product: $product) {
+                __typename
+                ... on KnowledgeDiscoveryZeroQueries {
+                    zeroQueries {
+                        query
+                        type
+						product
+						accountId
+						avatarUrl
+						dateRange
+					}
+                }
+            }
+		}
+	}
+`),l="MarkZeroQueryInteractedV1",d=`
+	mutation `.concat(l,`($input: KnowledgeDiscoveryMarkZeroQueryInteractedInput!) {
+		knowledgeDiscovery @optIn(to: "KnowledgeDiscovery Mark Zero Query Interacted V1") {
+			markZeroQueryInteractedV1(input: $input) {
+				success
+				errors {
+					message
+					extensions {
+						errorType
+						statusCode
+					}
+				}
+			}
+		}
+	}
+`),p=function(e){var r=e.variables,t=e.aggAbsoluteUrl,i=e.headers;return(0,n.g)({aggAbsoluteUrl:t,graphQuery:o,variables:r,operationName:a,headers:i})},y=function(e){var r=e.variables,t=e.aggAbsoluteUrl,a=e.headers;return(0,n.g)({aggAbsoluteUrl:t,graphQuery:u,variables:r,operationName:c,headers:a})},m=function(e){var r=e.variables,t=e.aggAbsoluteUrl,a=e.headers;return(0,n.g)({aggAbsoluteUrl:t,graphQuery:s,variables:r,operationName:i,headers:a})},f=function(e){var r=e.variables,t=e.aggAbsoluteUrl,a=e.headers;return(0,n.g)({aggAbsoluteUrl:t,graphQuery:d,variables:r,operationName:l,headers:a})}},218515(e,r,t){var n,a,o,i=((n={}).CONFLUENCE="CONFLUENCE",n.JIRA="JIRA",n.GOOGLE="GOOGLE",n.SLACK="SLACK",n.SHAREPOINT="SHAREPOINT",n),s=((a={}).TODAY="today",a.YESTERDAY="yesterday",a.PAST_7_DAYS="past7days",a.PAST_30_DAYS="past30days",a),c=((o={}).COLLABORATOR_PROFILE="COLLABORATOR_PROFILE",o.CONFLUENCE_PAGES_CREATED="CONFLUENCE_PAGES_CREATED",o.CONFLUENCE_PAGES_CREATED_30_DAYS="CONFLUENCE_PAGES_CREATED_30_DAYS",o.CONFLUENCE_PAGES_CREATED_7_DAYS="CONFLUENCE_PAGES_CREATED_7_DAYS",o.CONFLUENCE_PAGES_CREATED_COLLABORATOR="CONFLUENCE_PAGES_CREATED_COLLABORATOR",o.CONFLUENCE_PAGES_CREATED_COLLABORATOR_30_DAYS="CONFLUENCE_PAGES_CREATED_COLLABORATOR_30_DAYS",o.CONFLUENCE_PAGES_CREATED_COLLABORATOR_7_DAYS="CONFLUENCE_PAGES_CREATED_COLLABORATOR_7_DAYS",o.CONFLUENCE_PAGES_CREATED_COLLABORATOR_TOPIC="CONFLUENCE_PAGES_CREATED_COLLABORATOR_TOPIC",o.JIRA_MY_WORK_ITEMS="JIRA_MY_WORK_ITEMS",o.JIRA_NLQ="JIRA_NLQ",o.JIRA_NLQ_COLLABORATOR="JIRA_NLQ_COLLABORATOR",o.JIRA_TICKETS_ASSIGNED="JIRA_TICKETS_ASSIGNED",o.JIRA_TICKETS_ASSIGNED_COLLABORATOR="JIRA_TICKETS_ASSIGNED_COLLABORATOR",o.JIRA_TICKETS_CREATED="JIRA_TICKETS_CREATED",o.JIRA_TICKETS_CREATED_COLLABORATOR="JIRA_TICKETS_CREATED_COLLABORATOR",o.JIRA_TICKETS_CREATED_COLLABORATOR_TOPIC="JIRA_TICKETS_CREATED_COLLABORATOR_TOPIC",o.RECENT_WORK="RECENT_WORK",o.RELATED_QUESTION="RELATED_QUESTION",o.THIRD_PARTY_GOOGLE_COLLABORATOR_DOCS="THIRD_PARTY_GOOGLE_COLLABORATOR_DOCS",o.THIRD_PARTY_GOOGLE_COLLABORATOR_DOCS_TOPIC="THIRD_PARTY_GOOGLE_COLLABORATOR_DOCS_TOPIC",o.THIRD_PARTY_GOOGLE_MY_DOCS="THIRD_PARTY_GOOGLE_MY_DOCS",o.THIRD_PARTY_SHAREPOINT_COLLABORATOR_DOCS="THIRD_PARTY_SHAREPOINT_COLLABORATOR_DOCS",o.THIRD_PARTY_SHAREPOINT_COLLABORATOR_DOCS_TOPIC="THIRD_PARTY_SHAREPOINT_COLLABORATOR_DOCS_TOPIC",o.THIRD_PARTY_SHAREPOINT_MY_DOCS="THIRD_PARTY_SHAREPOINT_MY_DOCS",o.THIRD_PARTY_SLACK_COLLABORATOR_MESSAGES="THIRD_PARTY_SLACK_COLLABORATOR_MESSAGES",o.THIRD_PARTY_SLACK_MY_MESSAGES="THIRD_PARTY_SLACK_MY_MESSAGES",o.WHO_IS="WHO_IS",o);t.d(r,{W:()=>i,q1:()=>s,rN:()=>c})},130339(e,r,t){var n=t(98812),a=t(316090),o=t(371431),i=t(318051);function s(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var c="SearchEntitiesQuery",u=function(e){var r=e.includeSpaceKey,t=e.includeContainerId,n=`
+    ... on SearchConfluenceSpace {
+      key
+    }
+  `,a=`
+    ... on SearchResultGraphDocument {
+      entity {
+        ... on ExternalDocument {
+          containerId
+        }
+      }
+    }
+  `;return`
+  query `.concat(c,`(
+		$experience: String!, 
+		$query: String!, 
+		$first: Int, 
+		$filters: SearchFilterInput!
+		$experimentId: String
+		$shadowExperimentId: String
+		$experimentLayers: [SearchExperimentLayer]
+	) {
+    search {
+      results: search(
+        experience: $experience
+        query: $query
+        first: $first
+        filters: $filters
+				experimentContext: {
+					experimentId: $experimentId
+					shadowExperimentId: $shadowExperimentId
+					experimentLayers: $experimentLayers
+				}
+      ) {
+        edges {
+          node {
+            id
+            title
+            type
+            url
+            iconUrl
+            `).concat(r?n:"",`
+            `).concat(t?a:"",`
+          }
+        }
+      }
+    }
+  }
+  `)},l=(0,i.L)(),d=function(e){var r,t=e.data,n=e.errors;return!t||!!n&&n.length>0||(null==(r=t.search)?void 0:r.results.edges.length)===0},p=function(e){var r=e.variables,t=e.aggAbsoluteUrl,i=e.headers,p=e.includeSpaceKey,y=e.includeContainerId;return l.inMemoryDecorator((0,o.F)(r),function(){return(0,a.g)({variables:function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?s(Object(t),!0).forEach(function(r){(0,n.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):s(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({first:20,experience:""},r),aggAbsoluteUrl:t,graphQuery:u({includeSpaceKey:p,includeContainerId:y}),operationName:c,headers:i})},d)};t.d(r,{Y:()=>p})},190134(e,r,t){var n=t(316090),a=t(371431),o=t(318051),i="SmartsRecommendedContainerQuery",s=`
+query `.concat(i,`($userId: String!, $tenantId: String!) {
+  smarts {
+    results: recommendedContainer(
+      recommendationsQuery: {
+        context: {
+          userId: $userId,
+          tenantId: $tenantId,
+          product: "confluence"
+        },
+        modelRequestParams: {
+          caller: "full-page-search",
+          experience: "CgContainerNearbyUser"
+        },
+        requestingUserId: $userId
+      }
+    ) {
+      id
+      score
+      container {
+        createdDate
+        id
+        key
+        name
+        spaceId
+        status
+        type
+        links {
+          base
+        }
+        icon {
+          path
+        }
+      }
+    }
+  }
+}
+`),c=(0,o.L)(),u=function(e){var r=e.data,t=e.errors;if(!r||t&&t.length>0)return!0;var n=r.smarts.results;return!n||0===n.length},l=function(e){var r=e.variables,t=e.aggAbsoluteUrl,o=e.headers;return c.inMemoryDecorator((0,a.F)(r),function(){return(0,n.g)({variables:r,aggAbsoluteUrl:t,graphQuery:s,operationName:i,headers:o})},u)};t.d(r,{F:()=>l})},122908(e,r,t){var n=t(316090),a=t(371431),o=t(318051),i="FPSConfluenceSmartUsersQuery",s=`
+query `.concat(i,`($userId: String!, $tenantId: String!, $maxNumberOfResults: Int!) {
+  smarts {
+    results: recommendedUser(
+      recommendationsQuery: {
+        context: {
+          userId: $userId
+          tenantId: $tenantId
+          product: "confluence"
+        },
+        modelRequestParams: {
+          caller: "full-page-search"
+          experience: "CgUserNearbyUser"
+        }
+        requestingUserId: $userId
+        maxNumberOfResults: $maxNumberOfResults
+      }
+    ) {
+      id
+      user {
+        accountId
+        name
+        picture
+      }
+    }
+  }
+}
+`),c=(0,o.L)(),u=function(e){var r=e.data,t=e.errors;if(!r||t&&t.length>0)return!0;var n=r.smarts.results;return!n||0===n.length},l=function(e){var r=e.variables,t=e.aggAbsoluteUrl,o=e.headers;return c.inMemoryDecorator((0,a.F)(r),function(){return(0,n.g)({variables:r,aggAbsoluteUrl:t,graphQuery:s,operationName:i,headers:o})},u)};t.d(r,{f:()=>l})},183277(e,r,t){var n=t(301463),a=function(e){return"SearchResultAssetsObjectSchema"===e.__typename},o=function(e){return"SearchResultAssetsObjectType"===e.__typename},i=function(e){return"SearchResultAssetsObject"===e.__typename},s=function(e){return a(e)||o(e)||i(e)},c=function(){return`
+		`.concat(`
+... on SearchResultAssetsObjectSchema {
+	id
+	title
+	type
+	description
+	lastModifiedDate
+	objectSchemaEntity {
+		`.concat((0,n.fg)("cdm_ga")?"name displayName":"",`
+		links {
+			web
+		}
+	}
+}
+	`),`
+		`).concat(`
+... on SearchResultAssetsObjectType {
+	id
+	title
+	type
+	description
+	lastModifiedDate
+	objectSchemaEntity {
+		id
+		name
+		`.concat((0,n.fg)("cdm_ga")?"displayName":"",`
+		links {
+			web
+		}
+	}
+	objectTypeEntity {
+		`).concat((0,n.fg)("cdm_ga")?"name displayName":"",`
+		icon {
+			url48
+		}
+		links {
+			web
+		}
+	}
+}
+	`),`
+		`).concat(`
+... on SearchResultAssetsObject {
+	id
+	title
+	description
+	lastModifiedDate
+	type
+	schemaAri
+	typeAri
+	objectSchemaEntity {
+		id
+		name
+		`.concat((0,n.fg)("cdm_ga")?"displayName":"",`
+		links {
+			web
+		}
+	}
+	objectTypeEntity {
+		id
+		name
+	}
+	objectEntity {
+		links {
+			web
+		}
+		avatar {
+			url48
+		}
+	}
+}
+	`),`
+	`)};t.d(r,{Ek:()=>o,Qy:()=>i,nF:()=>s,o1:()=>c,zJ:()=>a})},906647(e,r,t){var n=`
+... on SearchResultAtlasProject {
+  project {
+    key
+    state {
+      label
+      value
+    }
+    dueDate {
+      label
+    }
+    isPrivate
+  }
+}
+`,a=`
+... on SearchResultAtlasGoal {
+  goal {
+    description
+    key
+    status {
+      localizedLabel {
+        messageId
+      }
+      value
+      score
+    }
+    targetDate {
+      label
+    }
+  }
+}
+`,o=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("townsquare"))&&"SearchResultAtlasProject"===e.__typename},i=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("townsquare"))&&"SearchResultAtlasGoal"===e.__typename},s=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("townsquare"))&&"SearchResultAtlasTag"===e.__typename},c=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("townsquare"))&&"SearchDefaultResult"===e.__typename},u=function(e){return i(e)||o(e)||s(e)||c(e)},l=function(){return`
+		`.concat(a,`
+		`).concat(n,`
+		`).concat("",`
+	`)};t.d(r,{Qt:()=>l,xk:()=>u})},507956(e,r,t){var n=`
+... on SearchResultCompassComponent {
+	lastModifiedDate
+	ownerId
+	tier
+	component {
+		description
+		state
+	}
+}
+`,a=function(){return n},o=function(e){return"SearchResultCompassComponent"===e.__typename};t.d(r,{Q:()=>o,n:()=>a})},582217(e,r,t){t.d(r,{j7:()=>j,ah:()=>w,AY:()=>k,Pc:()=>x,wC:()=>T,rA:()=>R});var n,a,o=t(606100),i=t(345261),s=t.n(i),c=t(316090),u=t(371431),l=t(732645),d=t(348765),p=t(765508),y=t(523585),m=function(e,r){return(0,u.W)("".concat(e).concat(r))},f=t(301463),g=t(251480),h="searchCombinedConfig",b=d.Z,I=d.o,v=(0,l.s)({name:b,shouldUseStorageAdapter:!0}),S=v.refreshOnAccessDecorator,A=v.update,O=v.seed,_=v.get,E=(0,l.s)({name:I,shouldUseStorageAdapter:!1}),D=E.refreshOnAccessDecorator,P=E.update,$=E.seed,R=function(e,r,t){return A(m(e,r).toString(),t)},x=function(e){var r=e.userId,t=e.cloudId,n=e.config,a=e.expiration;return O(m(r||"",t).toString(),n,a)},C=function(e){return(0,u.W)(e).toString()},T=function(e,r){return P(C(e),r)},k=function(e){var r=e.cloudId,t=e.config,n=e.expiration;return $(C(r),t,n)},j=(n=(0,o.A)(s().mark(function e(r){var t,n,a,o,i,c,u;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:if(t=r.accountId,n=r.cloudId,a=r.config,o=r.expiration,t){e.next=1;break}return e.abrupt("return",!1);case 1:if(c=(i=_(m(t,n).toString(),!0)).storedValue,u=i.isExpired,!(c&&!u)){e.next=2;break}return e.abrupt("return",!1);case 2:return e.next=3,x({userId:t,cloudId:n,config:a,expiration:o});case 3:return e.abrupt("return",!0);case 4:case"end":return e.stop()}},e)})),function(e){return n.apply(this,arguments)}),w=(a=(0,o.A)(s().mark(function e(r){var t,n,a,o,i,u,l,d,b,I,v,A;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.cloudId,n=r.userId,a=r.aggAbsoluteUrl,o=r.onlyRefreshIfExpired,i=r.expiration,l=void 0===(u=r.degradationCallback)?function(){}:u,d=r.cacheAnalyticsCallback,b=r.returnExpired,I=r.networkCallbacks,v=r.headers,A=(0,p.u)()?D:S,e.abrupt("return",A({key:(0,p.u)()?C(t||""):m(n||"",t||"").toString(),supplier:function(){var e=(0,c.g)({graphQuery:`
+query `.concat(h,`($cloudId: ID!) {
+  search {
+      configuration(cloudId: $cloudId) {
+        firstPartyProducts {
+          name
+        }
+        thirdPartyProducts {
+          name
+          outboundAuthUrl
+          isUserOAuthed
+          providerId
+          integrationARI
+          workspaceName
+          workspaceUrl
+          datasourceId
+          connectionId
+          connectorSyncType
+          isImpersonationAuthEnabled
+          connectorCreatedAt
+          `).concat((0,g.F)()?"connectedAt":"",`
+          lightIcon
+          entityTypes
+          environmentType
+        }
+        intercomHmac
+        siteMetadata {
+          isRovoEnabled
+          isJiraIssueIndexed
+          applicationMode
+          siteName
+          orgId
+          productEdition
+          productInfo {
+            name
+            dataRegion
+          }
+        }
+        `).concat((0,f.fg)("rovo_fps_unit_metadata")?"unitMetadata { id siteName url }":"",`
+    }
+  }
+}`),variables:{cloudId:t},operationName:h,aggAbsoluteUrl:a,headers:v}).then(function(e){if(null==(r=e.errors)?void 0:r.some(function(e){return e})){var r,t,n,a=null==(n=e.errors)?void 0:n.map(function(e){return e.message}).join(", ");throw Error("Search combined config response had errors: ".concat(a))}var o=null==(t=e.data)||null==(t=t.search)?void 0:t.configuration;if(!o)throw Error("Search combined config response missing configuration.");return o});return new y.L(e,l).promise()},onlyRefreshIfExpired:o,expiration:i,returnExpired:b,analyticsCallback:d,networkCallbacks:I,serveResolvedDuringRefresh:!0}));case 1:case"end":return e.stop()}},e)})),function(e){return a.apply(this,arguments)})},13406(e,r,t){var n=function(e){return"SearchConfluencePageBlogAttachment"===e.__typename},a=`
+... on SearchConfluenceSpace {
+	key
+	lastModified
+	iconPath
+	socialSignal(tenantId: $tenantId) @include(if: $includeSocialSignals) {
+		signal
+		timestamp
+		user {
+			accountId
+			name
+			picture
+			... on AtlassianAccountUser {
+				email
+				extendedProfile {
+					jobTitle
+				}
+			}
+		}
+
+	}
+}
+`,o=function(e){return"SearchConfluenceSpace"===e.__typename},i=function(e){return n(e)||o(e)},s=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return`
+		`.concat(`
+... on SearchConfluencePageBlogAttachment {
+	lastModified
+	`.concat(e?`
+	latestUserAction @include(if: $includeUserSignals)
+	latestUserActionTs @include(if: $includeUserSignals)
+	`:"",`
+	isVerified
+	space {
+		id
+		name
+		webUiLink
+	}
+	__typename
+	confluenceEntity @include(if: $includeConfluenceEntity) {
+		... on ConfluencePage {
+			subtype
+			commentCountSummary {
+				total
+			}
+			likesSummary {
+				count
+			}
+		}
+	}
+	socialSignal(tenantId: $tenantId) @include(if: $includeSocialSignals) {
+		signal
+		timestamp
+		user {
+			accountId
+			name
+			picture
+			... on AtlassianAccountUser {
+				email
+				extendedProfile {
+					jobTitle
+				}
+			}
+		}
+	}
+	linkedResults {
+		id
+		title
+		url
+		type
+		description
+		lastModifiedDate
+		category
+		subtype
+		integrationId
+		providerId
+	}
+}
+`),`
+		`).concat(a,`
+	`)};t.d(r,{LJ:()=>n,b8:()=>s,rS:()=>o,wn:()=>i})},752569(e,r,t){t.d(r,{Vx:()=>I,Wr:()=>S,iE:()=>A,Z5:()=>v,fp:()=>h,pZ:()=>g,gp:()=>E,OM:()=>p,yX:()=>b,U_:()=>_,iY:()=>O});var n=t(98812),a=t(316090),o=t(371431),i=t(318051),s=t(461962),c=function(e){return`
+		query `.concat(e,` (
+			$query: String!
+			$cloudIdARI: String!
+			$limit: Int!
+			$entities: [String!]!
+			$product: String!
+			$integration: String!
+			$containerTypes: [String!]
+			) {
+		search {
+			search(
+			query: $query
+			first: $limit
+			filters: {
+				entities: $entities,
+				thirdPartyFilters: {
+					containerTypes : $containerTypes,
+					thirdPartyProducts:[
+						{
+							product: $product,
+							integrationId: $integration,
+					subtypes:[]
+					}
+					]
+				},
+				locations: [$cloudIdARI]
+			}
+			experience: "search-page"
+			) {
+				edges {
+					node {
+					...on SearchResultGraphDocument {
+						entity {
+							...on ExternalSpace {
+									id
+									key
+									displayName
+									icon {
+										height
+										isDefault
+										url
+										width
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	`)},u=t(315682);function l(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}function d(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?l(Object(t),!0).forEach(function(r){(0,n.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):l(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}var p=(0,i.L)(),y=function(e,r){var t,n,a,i,s={query:e.query,entities:e.entities,commonFilters:e.commonFilters,confluenceFilters:e.confluenceFilters,jiraFilters:e.jiraFilters,mercuryFilters:e.mercuryFilters,compassFilters:e.compassFilters,assetsFilters:e.assetsFilters,thirdPartyFilters:e.thirdPartyFilters,cloudIdARI:e.cloudIdARI,sortField:null!=(t=null==(n=e.sort.at(0))?void 0:n.field)?t:"",sortOrder:null!=(a=null==(i=e.sort.at(0))?void 0:i.order)?a:"",after:e.after,originalQuery:r};return(0,o.F)(s)},m=function(e){var r,t=e.data,n=e.errors;return!t||!t.search||!!n&&n.length>0||(null==(r=t.search)?void 0:r.results.edges.length)===0},f=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.originalQuery,o=e.useCache,i=e.operationName,c=e.serveUserShardUI,l=e.headers,d=e.networkCallbacks;r.experience=r.experience||"search-page",r.skip3pEntityHydration=r.skip3pEntityHydration||r.skipFieldsFor3pInQuickFind||!1,r.includeGithubEntityHydration=!!r.skip3pEntityHydration&&(r.includeGithubEntityHydration||!1),r.includeSpaceSubtype=r.includeSpaceSubtype||!1,r.skipFieldsFor3pInQuickFind=r.skipFieldsFor3pInQuickFind||!1,r.includeSocialSignals=void 0===r.includeSocialSignals||r.includeSocialSignals,r.includeJiraIssueType=r.includeJiraIssueType||!1,r.includeJiraBoardContainer=r.includeJiraBoardContainer||!1,r.includeConfluenceEntity="boolean"!=typeof r.includeConfluenceEntity||r.includeConfluenceEntity,r.includeAutocompleteSuggestions=r.includeAutocompleteSuggestions||!1;var f=(0,u.WK)(i,void 0!==c&&c);return o?p.inMemoryDecorator(y(r,n),(0,s.g)(function(){return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:f,operationName:i,headers:l})},d),m):(0,s.g)(function(){return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:f,operationName:i,headers:l})},d)()},g=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.originalQuery,a=e.serveUserShardUI,o=e.headers,i=e.networkCallbacks,s=e.operationName;return f({variables:r,aggAbsoluteUrl:t,originalQuery:n,useCache:!1,operationName:void 0===s?u.OP:s,serveUserShardUI:void 0!==a&&a,headers:o,networkCallbacks:i})},h=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=c(u.ZB);return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.ZB,headers:n})},b=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.LW)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.oR,headers:n})},I=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.Iz)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.dY,headers:n})},v=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.Oi)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.Bg,headers:n})},S=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.tx)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.U3,headers:n})},A=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=c(u.az);return(0,a.g)({variables:d(d({},r),{},{integration:"ari:cloud:platform::integration/confluence-dc"}),aggAbsoluteUrl:t,graphQuery:o,operationName:u.az,headers:n})},O=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.rB)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.Q2,headers:n})},_=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.$6)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.GE,headers:n})},E=function(e){var r=e.variables,t=e.aggAbsoluteUrl,n=e.headers,o=(0,u.Y2)();return(0,a.g)({variables:r,aggAbsoluteUrl:t,graphQuery:o,operationName:u.yB,headers:n})}},698463(e,r,t){var n="neutral",a={1:n,2:n,3:"success",4:"information"};t.d(r,{L:()=>a})},434892(e,r,t){var n={MediumGray:"MEDIUM_GRAY",Green:"GREEN",Yellow:"YELLOW",Brown:"BROWN",Red:"WARM_RED",BlueGray:"BLUE_GRAY"};t.d(r,{a:()=>n})},68696(e,r,t){var n=`
+... on SearchResultJiraIssue {
+  id
+  title
+  type
+  description
+  url
+  iconUrl
+  lastModifiedDate
+  issueTypeId
+  status {
+    id
+    name
+  }
+  issue {
+    webUrl
+		key
+		assigneeField {
+			user {
+				name
+				picture
+			}
+		}
+    fieldsById(ids: ["project"]) {
+      edges {
+        node {
+          __typename
+          name
+          ... on JiraProjectField {
+            project {
+              id
+              name
+			  projectType
+            }
+          }
+        }
+      }
+    }
+			issueTypeAvatarUrl
+		issueTypeField @include(if: $includeJiraIssueType) {
+			id
+			issueType {
+				id
+				name
+			}
+		}
+  }
+  socialSignal(tenantId: $tenantId) @include(if: $includeSocialSignals) {
+	    signal
+		timestamp
+		user {
+			accountId
+			name
+			picture
+			... on AtlassianAccountUser {
+				email
+				extendedProfile {
+					jobTitle
+				}
+			}
+	    }
+  }
+	linkedResults {
+		id
+		title
+		url
+		type
+		description
+		lastModifiedDate
+		category
+		subtype
+		integrationId
+		providerId
+	}
+  __typename
+}
+`,a=function(e){return"SearchResultJiraIssue"===e.__typename},o=`
+... on SearchResultJiraBoard {
+  boardId
+  container @include(if: $includeJiraBoardContainer) {
+		__typename
+		... on SearchResultJiraBoardProjectContainer {
+			__typename
+			projectName
+		}
+		... on SearchResultJiraBoardUserContainer {
+			__typename
+			userName
+		}
+	}
+	board {
+		boardFrontendUrl
+		iconUrl
+	}
+  product
+}
+`,i=function(e){return"SearchResultJiraBoard"===e.__typename},s=function(e){return"SearchResultJiraProject"===e.__typename||a(e)||"SearchResultJiraFilter"===e.__typename||"SearchResultJiraDashboard"===e.__typename||i(e)||"SearchResultJiraPlan"===e.__typename},c=function(){return`
+		`.concat(`
+... on SearchResultJiraProject {
+  projectId
+  projectKey
+  projectType
+  lastModifiedDate
+  project {
+    webUrl
+  }
+	socialSignal(tenantId: $tenantId) @include(if: $includeSocialSignals) {
+		signal
+		timestamp
+		user {
+			accountId
+			name
+			picture
+			... on AtlassianAccountUser {
+				email
+				extendedProfile {
+					jobTitle
+				}
+			}
+		}
+	}
+}`,`
+		`).concat(n,`
+		`).concat("",`
+		`).concat("",`
+		`).concat(o,`
+	`)};t.d(r,{F2:()=>c,gv:()=>i,lN:()=>a,u3:()=>s})},833489(e,r,t){var n=t(301463),a=`
+... on SearchResultMercuryFocusArea {
+	lastModifiedDate
+	focusArea {
+		id
+		uuid
+		name
+		focusAreaType {
+			id
+			name
+			hierarchyLevel
+		}
+		status {
+			key
+			displayName
+		}
+		health {
+			key
+			color
+			displayName
+		}
+		targetDate {
+			targetDate
+			targetDateType
+		}
+		owner {
+			accountId
+			name
+		}
+	}
+}
+`,o=`
+... on SearchResultMercuryFocusAreaStatusUpdate {
+	lastModifiedDate
+	focusArea {
+		name
+	}
+}
+`,i=`
+... on SearchResultMercuryOrganization {
+	lastModifiedDate
+	organization @optIn(to: "Mercury") {
+		id
+		name
+		organizationType {
+			id
+			name
+			hierarchyLevel
+		}
+		status {
+			key
+			displayName
+		}
+		targetDate {
+			targetDate
+			targetDateType
+		}
+		owner {
+			accountId
+			name
+		}
+	}
+}
+`,s=`
+... on SearchResultMercuryOrganizationStatusUpdate {
+	lastModifiedDate
+}
+`,c=`
+... on SearchResultSpfAsk {
+	lastModifiedDate
+	ask @optIn(to: "Spf") {
+		id
+		name
+		status
+		targetDate {
+			targetDate
+			targetDateType
+		}
+	}
+}
+`,u=`
+... on SearchResultMercuryRisk {
+	lastModifiedDate
+	risk @optIn(to: "Mercury") {
+		id
+		name
+		status {
+			key
+			displayName
+		}
+		targetDate {
+			targetDate
+			targetDateType
+		}
+	}
+}
+`,l=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("mercury"))&&"SearchResultMercuryFocusArea"===e.__typename},d=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("mercury"))&&"SearchResultMercuryFocusAreaStatusUpdate"===e.__typename},p=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("mercury"))&&"SearchResultMercuryOrganization"===e.__typename},y=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("mercury"))&&"SearchResultMercuryOrganizationStatusUpdate"===e.__typename},m=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("passionfruit"))&&"SearchResultSpfAsk"===e.__typename},f=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("mercury"))&&"SearchResultMercuryRisk"===e.__typename},g=function(e){return l(e)||d(e)||m(e)||f(e)||p(e)||y(e)},h=function(){return`
+		`.concat(a,`
+		`).concat(o,`
+		`).concat((0,n.fg)("platform_passionfruit_search_onboarding_enabled")?c:"",`
+		`).concat((0,n.fg)("platform_mercury_risk_search_ui_enabled")?u:"",`
+		`).concat((0,n.fg)("platform_organization_search_onboarding_enabled")?i:"",`
+		`).concat((0,n.fg)("platform_organization_search_onboarding_enabled")?s:"",`
+	`)};t.d(r,{EC:()=>y,Jb:()=>p,Jp:()=>l,Kr:()=>h,Lg:()=>g,ZX:()=>f,iF:()=>d,vP:()=>m})},690596(e,r,t){var n,a=t(98812),o=t(606100),i=t(345261),s=t.n(i),c=t(316090),u=t(315682);function l(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var d=(0,u.Ly)(),p=(n=(0,o.A)(s().mark(function e(r){var t,n,o,i,p,y,m,f;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return i=r.cloudId,p=r.aggAbsoluteUrl,y=r.headers,e.next=1,(0,c.g)({graphQuery:d,operationName:u.mw,variables:{query:"",cloudIdARI:["ari:cloud:confluence::site/".concat(i)],limit:30,entities:["ati:cloud:graph:conversation"],product:"teams",integration:"ari:cloud:platform::integration/microsoft",subtypes:["space"]},aggAbsoluteUrl:p,headers:y});case 1:if(!(null!=(t=(m=e.sent).errors)&&t.length)){e.next=2;break}throw Error("[".concat(u.mw,"] GraphQL errors prevented loading MS Teams workspaces"));case 2:return f=new Set,e.abrupt("return",null!=(n=null==m||null==(o=m.data)||null==(o=o.search)||null==(o=o.search)||null==(o=o.edges)?void 0:o.flatMap(function(e){var r,t,n=e.node,o=null==n||null==(r=n.entity)?void 0:r.workspace;return!o||f.has(o)?[]:(f.add(o),[function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?l(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):l(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({name:o},(null==n||null==(t=n.entity)?void 0:t.id)!==void 0&&{id:n.entity.id})])}))?n:[]);case 3:case"end":return e.stop()}},e)})),function(e){return n.apply(this,arguments)});t.d(r,{B:()=>p})},315682(e,r,t){t.d(r,{OP:()=>b,dY:()=>k,Iz:()=>j,U3:()=>w,tx:()=>F,az:()=>A,Bg:()=>C,Oi:()=>T,ZB:()=>S,WK:()=>v,Y2:()=>U,yB:()=>N,oR:()=>R,LW:()=>x,mw:()=>E,Ly:()=>D,GE:()=>P,$6:()=>$,Q2:()=>O,rB:()=>_});var n=t(301463),a=t(183277),o=t(906647),i=t(507956),s=t(13406),c=t(68696),u=t(833489),l=t(935846),d=`
+... on SearchFederatedEmailEntity {
+	sender {
+		email
+		name
+	}
+}
+`,p=`
+... on SearchResultFederated @skip(if: $skipFieldsFor3pInQuickFind) {
+	lastModifiedDate
+	entity {
+		`.concat(d,`
+	}
+}
+`),y=t(787149),m=`
+... on SearchResultTrelloBoard {
+	type
+	description
+	lastModifiedDate
+}
+`,f=`
+... on SearchResultTrelloCard {
+	type
+	description
+	lastModifiedDate
+	boardName
+	commentsCount
+	linkedResults {
+		id
+		title
+		url
+		type
+		description
+		lastModifiedDate
+		category
+		subtype
+		integrationId
+		providerId
+	}
+}
+`,g=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return`
+		`.concat((0,s.b8)(e),`
+		`).concat((0,c.F2)(),`
+		`).concat(`
+		`.concat(m,`
+		`).concat(f,`
+	`),`
+		`).concat((0,o.Qt)(),`
+		`).concat((0,i.n)(),`
+		`).concat((0,u.Kr)(),`
+		`).concat((0,y.nU)(),`
+		`).concat(p,`
+		`).concat((0,n.fg)("assets_rovo_search_all")?(0,a.o1)():"",`
+		`).concat((0,n.fg)("talent_global_search")?(0,l.PI)():"",`
+	`)},h=`
+description
+iconUrl
+id
+title
+type
+url
+__typename
+`,b="SearchDialogQuery",I=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return e?`
+		$includeUserSignals: Boolean!`:""},v=function(e){var r=arguments.length>1&&void 0!==arguments[1]&&arguments[1],t=g(r);return`
+	query `.concat(e,`(
+		$query: String!
+		$cloudIdARI: [String!]!
+		$tenantId: ID!
+		$limit: Int!
+		$entities: [String!]!
+		$queryVersion: Int
+		$searchSessionId: String
+		$sessionId: String
+		$commonFilters: SearchCommonFilter
+		$confluenceFilters: SearchConfluenceFilter
+		$jiraFilters: SearchJiraFilter
+		$mercuryFilters: SearchMercuryFilter
+		`).concat((0,n.fg)("talent_global_search")?"$talentFilters: SearchTalentFilter":"",`
+		$compassFilters: SearchCompassFilter
+		$thirdPartyFilters:  SearchThirdPartyFilter
+		`).concat((0,n.fg)("assets_rovo_search_all")?"$assetsFilters: SearchAssetsFilter":"",`
+		$sort: [SearchSortInput]
+		$sourceProduct: String
+		$experimentId: String
+		$shadowExperimentId: String
+		$experimentLayers: [SearchExperimentLayer]
+		$after: String
+		$disableQueryReplacement: Boolean
+		$experience: String!
+		$enableHighlighting: Boolean
+		$skip3pEntityHydration: Boolean!
+		$includeGithubEntityHydration: Boolean! = false
+		$includeJiraIssueType: Boolean!
+		$includeJiraBoardContainer: Boolean!
+		$includeSocialSignals: Boolean!`).concat(I(r),`
+		$fanoutExperimentCohort: String
+		$includeSpaceSubtype: Boolean!
+		$includeConfluenceEntity: Boolean!
+		$skipFieldsFor3pInQuickFind: Boolean!
+		$includeAutocompleteSuggestions: Boolean = false
+	) {
+		search {
+			results: search(
+				experience: $experience
+				enableHighlighting: $enableHighlighting
+				fanoutExperimentCohort: $fanoutExperimentCohort
+				query: $query
+				first: $limit
+				after: $after
+				sort: $sort
+				disableQueryReplacement: $disableQueryReplacement
+				filters: {
+					entities: $entities
+					locations: $cloudIdARI
+					commonFilters: $commonFilters
+					confluenceFilters: $confluenceFilters
+					jiraFilters: $jiraFilters
+					`).concat((0,n.fg)("assets_rovo_search_all")?"assetsFilters: $assetsFilters":"",`
+					mercuryFilters: $mercuryFilters
+					compassFilters: $compassFilters
+					thirdPartyFilters: $thirdPartyFilters
+					`).concat((0,n.fg)("talent_global_search")?"talentFilters: $talentFilters":"",`
+				}
+				analytics: {
+					queryVersion: $queryVersion
+					searchSessionId: $searchSessionId
+					sessionId: $sessionId
+					sourceProduct: $sourceProduct
+				}
+				experimentContext: {
+					experimentId: $experimentId
+					shadowExperimentId: $shadowExperimentId
+					experimentLayers: $experimentLayers
+				}
+			) {
+				edges {
+					node {
+						`).concat(h,`
+						`).concat(t,`
+					}
+				}
+				queryInfo {
+					originalQuery
+					replacementQuery
+					suggestedQuery
+					originalQueryType
+					confidenceScore
+					shouldTriggerAutocorrectionExperience
+				}
+				abTest {
+					abTestId
+					controlId
+					experimentId
+				}
+				totalCount
+				totalCounts {
+					product
+					count
+				}
+        pageInfo {
+          endCursor
+        }
+				autocompleteSuggestions @include(if: $includeAutocompleteSuggestions)
+			}
+		}
+	}
+	`)},S="jiraDcProjectFilterOptionsQuery",A="confluenceDcSpaceFilterOptionsQuery",O="thirdPartySpaceFilterOptionsQuery",_=function(){return`
+		query `.concat(O,` (
+			$query: String!
+			$cloudIdARI: [String!]!
+			$limit: Int!
+			$entities: [String!]!
+			$product: String!
+			$integration: String!
+			$subtypes: [String!]!
+		) {
+		search {
+			search(
+			query: $query
+			first: $limit
+			filters: {
+				entities: $entities,
+				thirdPartyFilters: {
+					titleMatchOnly: true,
+					thirdPartyProducts:[
+						{
+							product: $product,
+							integrationId: $integration,
+							subtypes: $subtypes
+						}
+					]
+				},
+				locations: $cloudIdARI
+			}
+			experience: "search-page"
+			) {
+				edges {
+					node {
+						...on SearchResultGraphDocument {
+							entity {
+								...on ExternalSpace {
+									id
+									displayName
+									icon {
+										url
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	`)},E="teamsWorkspaceFilterOptionsQuery",D=function(){return`
+		query `.concat(E,` (
+			$query: String!
+			$cloudIdARI: [String!]!
+			$limit: Int!
+			$entities: [String!]!
+			$product: String!
+			$integration: String!
+			$subtypes: [String!]!
+		) {
+		search {
+			search(
+			query: $query
+			first: $limit
+			filters: {
+				entities: $entities,
+				thirdPartyFilters: {
+					titleMatchOnly: true,
+					thirdPartyProducts:[
+						{
+							product: $product,
+							integrationId: $integration,
+							subtypes: $subtypes
+						}
+					]
+				},
+				locations: $cloudIdARI
+			}
+			experience: "search-page"
+			) {
+				edges {
+					node {
+						...on SearchResultGraphDocument {
+							entity {
+								...on ExternalConversation {
+									workspace
+									id
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	`)},P="thirdPartyRepositoryFilterOptionsQuery",$=function(){return`
+		query `.concat(P,` (
+			$query: String!
+			$cloudIdARI: [String!]!
+			$limit: Int!
+			$entities: [String!]!
+			$product: String!
+			$integration: String!
+			$subtypes: [String!]!
+		) {
+		search {
+			search(
+			query: $query
+			first: $limit
+			filters: {
+				entities: $entities,
+				thirdPartyFilters: {
+					titleMatchOnly: true,
+					thirdPartyProducts:[
+						{
+							product: $product,
+							integrationId: $integration,
+							subtypes: $subtypes
+						}
+					]
+				},
+				locations: $cloudIdARI
+			}
+			experience: "search-page"
+			) {
+				edges {
+					node {
+						...on SearchResultGraphDocument {
+							entity {
+								...on ExternalRepository {
+									id
+									name
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	`)},R="spaceIdFilterOptionsQuery",x=function(){return`
+		query `.concat(R,` ($ids: [ID!]!) {
+			external_entities(ids: $ids) @optIn(to: "ExternalDataDepotQueryV2"){
+				space {
+					id
+					displayName
+					icon {
+						url
+					}
+				}
+			}
+		}`)},C="documentIdFilterOptionsQuery",T=function(){return`
+		query `.concat(C,` ($ids: [ID!]!) {
+			external_entities(ids: $ids) @optIn(to: "ExternalDataDepotQueryV2"){
+				document {
+					id
+					displayName
+					container @optIn(to: "ExternalDataDepotQueryV2") {
+                        ... on ExternalSpace {
+                            id
+                        }
+                    }
+				}
+			}
+		}`)},k="confluenceDcContentFilterOptionsQuery",j=function(){return`
+		query `.concat(k,` (
+			$query: String!
+			$cloudIdARI: String!
+			$limit: Int!
+			$entities: [String!]!
+			$product: String!
+		) {
+		search {
+			search(
+			query: $query
+			first: $limit
+			filters: {
+				entities: $entities,
+				locations: [$cloudIdARI],
+				thirdPartyFilters: {
+					thirdPartyProducts:[
+						{
+							product: $product,
+							integrationId:"ari:cloud:platform::integration/confluence-dc",
+							subtypes:[]
+						}
+					]
+				}
+			}
+			analytics: {searchSessionId: "graphql"}
+			experience: "search-page"
+			) {
+				edges {
+					node {
+					id
+					title
+					description
+					... on SearchResultGraphDocument {
+							entity {
+								...on ExternalDocument {
+									type {
+										category
+									}
+									parentId
+									container @optIn(to: "ExternalDataDepotQueryV2") {
+										...on ExternalSpace {
+											id
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	`)},w="confluenceDcPagesQuery",F=function(){return`
+		query `.concat(w,` (
+			$ancestorIds: [ID!]!
+		) {
+			external_entities(ids: $ancestorIds) @optIn(to: "ExternalDataDepotQueryV2") {
+				document {
+					id
+					displayName
+				}
+			}
+		}
+	`)},N="CollabContextWorkspaceIsConnectedToWorkspaceQuery",U=function(){return`
+		query `.concat(N,`($id: ID!) {
+			collabContext_workspaceIsConnectedToWorkspace(id: $id) {
+				edges {
+					node {
+						id
+					}
+					cursor
+				}
+				pageInfo {
+					endCursor
+					hasNextPage
+					hasPreviousPage
+					startCursor
+				}
+			}
+		}
+	`)}},264913(e,r,t){var n=t(98812),a={RELEVANCE:"relevance",LAST_MODIFIED_DATE:"latestModifiedDate",CREATED_DATE:"createdDate"},o={ASC:"ASC",DESC:"DESC"},i="".concat(a.RELEVANCE).concat(o.DESC),s="".concat(a.LAST_MODIFIED_DATE).concat(o.DESC),c="".concat(a.LAST_MODIFIED_DATE).concat(o.ASC),u="".concat(a.CREATED_DATE).concat(o.DESC),l="".concat(a.CREATED_DATE).concat(o.ASC),d=(0,n.A)((0,n.A)((0,n.A)((0,n.A)((0,n.A)({},i,{field:a.RELEVANCE,order:o.DESC,labelKey:i,selectedLabelKey:"".concat(i,"Selected"),drawerOrder:0}),s,{field:a.LAST_MODIFIED_DATE,order:o.DESC,labelKey:s,selectedLabelKey:"".concat(s,"Selected"),drawerOrder:1}),c,{field:a.LAST_MODIFIED_DATE,order:o.ASC,labelKey:c,selectedLabelKey:"".concat(c,"Selected"),drawerOrder:2}),u,{field:a.CREATED_DATE,order:o.DESC,labelKey:u,selectedLabelKey:"".concat(u,"Selected"),drawerOrder:3}),l,{field:a.CREATED_DATE,order:o.ASC,labelKey:l,selectedLabelKey:"".concat(l,"Selected"),drawerOrder:4});Object.values(d).sort(function(e,r){return e.drawerOrder-r.drawerOrder}),t.d(r,{iP:()=>a,qP:()=>o,yH:()=>d})},47106(e,r,t){t.d(r,{b:()=>y});var n,a=t(98812),o=t(606100),i=t(345261),s=t.n(i),c=t(316090),u="searchSlackChannels",l=`
+query `.concat(u,`($cloudId: ID!, $limit: Int) {
+  search {
+    configuration(cloudId: $cloudId) {
+      thirdPartySlackChannels(limit: $limit) {
+        channels {
+          id
+          name
+          isPrivate
+        }
+        nextCursor
+      }
+    }
+  }
+}`),d=t(7171);function p(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);r&&(n=n.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,n)}return t}var y=(n=(0,o.A)(s().mark(function e(r){var t,n,o,i,y,m,f,g,h,b;return s().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.cloudId,n=r.limit,o=r.aggAbsoluteUrl,i=r.headers,e.prev=1,e.next=2,(0,c.g)({graphQuery:l,variables:function(e){for(var r=1;r<arguments.length;r++){var t=null!=arguments[r]?arguments[r]:{};r%2?p(Object(t),!0).forEach(function(r){(0,a.A)(e,r,t[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(t)):p(Object(t)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(t,r))})}return e}({cloudId:t},void 0!==n&&{limit:n}),operationName:u,aggAbsoluteUrl:o,headers:i});case 2:if(h=null!=(y=null==(m=(g=e.sent).data)||null==(m=m.search)||null==(m=m.configuration)?void 0:m.thirdPartySlackChannels)?y:null,!(null!=(f=g.errors)&&f.length)||(d.warn("[".concat(u,'] GraphQL errors for cloudId "').concat(t,'":'),g.errors),h)){e.next=3;break}throw Error("[".concat(u,'] GraphQL errors prevented loading Slack channels for cloudId "').concat(t,'"'));case 3:return e.abrupt("return",h);case 4:throw e.prev=4,b=e.catch(1),d.error("[".concat(u,"] Failed to fetch Slack channels:"),b),b;case 5:case"end":return e.stop()}},e,null,[[1,4]])})),function(e){return n.apply(this,arguments)})},935846(e,r,t){var n=`
+... on SearchResultTalentPosition {
+	__typename
+	lastModifiedDate
+	position {
+		__typename
+		worker {
+			preferredName
+			user {
+				picture
+			}
+		}
+		fieldValues(
+			fieldIdIsIn: [
+				"positionId",
+				"positionStatus",
+				"positionJobTitle",
+				"positionPositionTitle",
+				"positionKey",
+				"positionExternalPositionKey",
+				"positionWorker"
+			]
+		) {
+			fieldId
+			fieldValue {
+				__typename
+				... on RadarStringFieldValue {
+					__typename
+					stringValue: value
+				}
+			}
+		}
+	}
+}
+`,a=function(e){var r;return(null==e||null==(r=e.id)?void 0:r.includes("radar"))&&"SearchResultTalentPosition"===e.__typename},o=function(e){return a(e)},i=function(){return`
+		`.concat(n,`
+	`)};t.d(r,{PI:()=>i,_y:()=>o})},439379(e,r,t){t.d(r,{Q:()=>d});var n,a=t(606100),o=t(345261),i=t.n(o),s=t(316090),c="searchThirdPartyFilterOptions",u=`
+query `.concat(c,`($cloudId: ID!, $datasourceId: String!, $orgId: String) {
+  search {
+    configuration(cloudId: $cloudId) {
+      thirdPartyFilterOptions(datasourceId: $datasourceId, orgId: $orgId) {
+        filters {
+          name
+          values {
+            name
+            label
+          }
+        }
+      }
+    }
+  }
+}`),l=t(7171),d=(n=(0,a.A)(i().mark(function e(r){var t,n,a,o,d,p,y,m,f,g;return i().wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return t=r.cloudId,n=r.datasourceId,a=r.orgId,o=r.aggAbsoluteUrl,e.prev=1,e.next=2,(0,s.g)({graphQuery:u,variables:{cloudId:t,datasourceId:n,orgId:null!=a&&""!==a?a:null},operationName:c,aggAbsoluteUrl:o});case 2:if(f=null!=(d=null==(p=(m=e.sent).data)||null==(p=p.search)||null==(p=p.configuration)?void 0:p.thirdPartyFilterOptions)?d:null,!(null!=(y=m.errors)&&y.length)||(l.warn("[".concat(c,'] GraphQL errors for datasource "').concat(n,'":'),m.errors),f)){e.next=3;break}throw Error("[".concat(c,'] GraphQL errors prevented loading third-party filter options for datasource "').concat(n,'"'));case 3:return e.abrupt("return",f);case 4:throw e.prev=4,g=e.catch(1),l.error("[".concat(c,'] Failed to fetch third-party filter options for datasource "').concat(n,'":'),g),g;case 5:case"end":return e.stop()}},e,null,[[1,4]])})),function(e){return n.apply(this,arguments)})},787149(e,r,t){t.d(r,{vt:()=>R,nU:()=>x,$Z:()=>w,bA:()=>k,ct:()=>T,Zt:()=>C,E$:()=>j});var n,a=t(301463),o=t(264851),i=`
+... on ExternalBranch {
+    name
+    container @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalRepository {
+            name
+        }
+    }
+}
+`,s=`
+... on ExternalCalendarEvent {
+	attachments {
+		byteSize
+		mimeType
+		thumbnailUrl
+		title
+		url
+	}
+	attendees {
+		isOptional
+		rsvpStatus
+		user {
+			thirdPartyUser {
+				id
+				email
+				name
+			}
+			user {
+				name
+			}
+		}
+	}
+	createdBy {
+		thirdPartyUser {
+			id
+			email
+			externalId
+			name
+			picture
+		}
+		user {
+			name
+		}
+	}
+	eventEndTime
+	eventStartTime
+	eventType
+	location {
+		address
+		coordinates
+		name
+		url
+	}
+	recurringEventId
+	videoMeetingUrl
+}
+`,c=`
+... on ExternalCampaign {
+	status
+	startDate
+	endDate
+	lastUpdated
+	owners {
+		thirdPartyUser {
+			name
+		}
+	}
+	createdBy {
+		thirdPartyUser {
+			name
+		}
+	}
+}
+`,u=`
+... on ExternalCase {
+	displayNumber
+	status
+	isClosed
+	lastUpdated
+	owners {
+		thirdPartyUser {
+			accountId
+			externalId
+			name
+			email
+			id
+		}
+		user {
+			name
+		}
+	}
+	createdBy {
+		thirdPartyUser {
+			name
+		}
+	}
+	container @optIn(to: "ExternalDataDepotQueryV2") {
+		... on ExternalCustomerOrg {
+			id
+			displayName
+		}
+	}
+}
+`,l=`
+... on SearchResultGraphCode {
+    path
+    repository {
+        name
+    }
+}
+`,d=`
+... on ExternalComment {
+	container @optIn(to: "ExternalDataDepotQueryV2") {
+		... on ExternalSpace {
+		displayName
+		url
+		subtype @include(if: $includeSpaceSubtype)
+	   }
+	}
+}
+`,p=`
+... on ExternalCommit {
+    author {
+        user {
+            name
+        }
+    }
+    container @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalRepository{
+            name
+        }
+    }
+}
+`,y=`
+... on ExternalConversation {
+    id
+    memberCount
+    displayName
+    membershipType
+    workspace
+    topic
+    members {
+        thirdPartyUser {
+            id
+            name
+        }
+        user {
+            id
+            name
+        }
+    }
+}
+`,m=`
+... on ExternalCustomerOrg {
+	country
+	accountType
+	thirdPartyId
+	websiteUrl
+	industry
+	displayName
+	contributors {
+		thirdPartyUser {
+			id
+			name
+		}
+	}
+	contacts {
+		thirdPartyUser {
+			id
+			accountId
+			externalId
+			name
+			nickname
+			email
+			picture
+			extendedProfile {
+				jobTitle
+				department
+				organization
+			}
+		}
+		user {
+			id
+			name
+		}
+	}
+	parent @optIn(to: "ExternalDataDepotQueryV2"){
+		...on ExternalCustomerOrg {
+			id
+			displayName
+		}
+	}
+	customerOrgLastActivity {
+		lastActivityAt
+		event
+	}
+	lifeTimeValue {
+		value
+		currencyCode
+	}
+}
+`,f=`
+... on ExternalDashboard {
+	id
+	url
+	createdAt
+	description
+	displayName
+	workspaceName
+	lastUpdatedAt
+	updateSequenceNumber
+	lastUpdatedBy {
+		thirdPartyUserId
+		userId
+	}
+	owners {
+		userId
+		thirdPartyUser {
+          	  name
+        }
+	}
+	elements {
+		name
+		innerComponents
+	}
+	pages {
+		name
+	}
+}
+`,g=`
+... on ExternalDataTable {
+	id
+	url
+	dataTableType: type
+	createdAt
+	description
+	displayName
+	workspaceName
+	lastUpdatedAt
+	updateSequenceNumber
+	lastUpdatedBy {
+		thirdPartyUserId
+		userId
+	}
+	owners {
+		userId
+		thirdPartyUser {
+          	  name
+        }
+	}
+	columns {
+		name
+		columnType
+		description
+		isRequired
+	}
+}
+`,h=`
+... on ExternalDeal {
+	stage
+	accountName
+	dealClosedAt
+	isClosed
+	thirdPartyId
+	parentId
+	lastActivity {
+		lastActivityAt
+		event
+	}
+	opportunityAmount {
+		value
+		currencyCode
+	}
+	contributors {
+		user {
+			thirdPartyUser {
+				id
+				name
+			}
+		}
+	}
+	contact {
+		thirdPartyUser {
+			id
+			accountId
+			externalId
+			name
+			nickname
+			email
+			picture
+			extendedProfile {
+				jobTitle
+				department
+				organization
+			}
+		}
+		user {
+			id
+			name
+		}
+	}
+	parent @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalCustomerOrg {
+          id
+          displayName
+        }
+    }
+}
+`,b=`
+... on ExternalDesign {
+    thumbnail {
+        externalUrl
+    }
+}
+`,I=`
+... on ExternalDocument {
+    type {
+        iconUrl
+    }
+    thirdPartyId
+    parent @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalDocument {
+            displayName
+            url
+        }
+    }
+	container @optIn(to: "ExternalDataDepotQueryV2") {
+		... on ExternalSpace {
+            displayName
+            url
+		}
+	}
+    reactions {
+        reactionType
+        total
+    }
+}
+`,v=`
+... on ExternalLead {
+	status
+	lastUpdated
+	owners {
+		thirdPartyUser {
+			name
+		}
+	}
+	createdBy {
+		thirdPartyUser {
+			name
+		}
+	}
+}
+`,S=`
+... on ExternalMessage {
+    lastUpdated
+    lastActive
+    description
+    reactionCount
+    attachments {
+	    title
+        mimeType
+        thumbnailUrl
+        url
+    }
+    createdBy {
+        thirdPartyUser {
+            id
+            accountId
+            externalId
+            name
+            nickname
+            email
+			picture
+            extendedProfile {
+                jobTitle
+                department
+                organization
+            }
+        }
+        user {
+            id
+            name
+        }
+    }
+    container @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalConversation {
+            id
+            displayName
+            memberCount
+            membershipType
+            type
+            members {
+                thirdPartyUser {
+                    id
+                    name
+                    nickname
+                    email
+                    extendedProfile {
+                        jobTitle
+                        department
+                        organization
+                    }
+                }
+            }
+        }
+    }
+    associatedWith {
+        edges {
+            node {
+                id
+                createdBy {
+                    thirdPartyUser {
+                        id
+                        accountId
+                        externalId
+                        name
+                        email
+                    }
+                }
+                entity {
+					__typename
+					... on ExternalConversation {
+						id
+						displayName
+						channelId:externalId
+					}
+					... on ThirdPartyUser {
+                        id
+                        email
+						externalId
+                        name
+                        nickname
+                        picture
+                        extendedProfile {
+                            jobTitle
+                            department
+                            organization
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+`,A=`
+... on ExternalProject {
+	assignee {
+		thirdPartyUser {
+			id
+			email
+			name
+		}
+		user {
+			name
+		}
+	}
+	attachments {
+		byteSize
+		mimeType
+		thumbnailUrl
+		title
+		url
+	}
+	createdBy {
+		thirdPartyUser {
+			id
+			email
+			name
+		}
+		user {
+			name
+		}
+	}
+	dueDate
+	key
+	status
+	container @optIn(to: "ExternalDataDepotQueryV2") {
+		... on ExternalSpace {
+		displayName
+		url
+		subtype @include(if: $includeSpaceSubtype)
+	   }
+	}
+}
+`,O=`
+... on ExternalPullRequest {
+    title
+    lastUpdate
+	pullRequestId
+	pullRequestStatus: status
+    container @optIn(to: "ExternalDataDepotQueryV2") {
+        ... on ExternalRepository {
+            name
+        }
+    }
+}
+`,_=`
+... on ExternalRemoteLink {
+  thumbnail {
+    externalUrl
+  }
+}
+`,E=`
+... on ExternalRepository {
+    name
+}
+`,D=`
+... on ExternalVideo {
+    durationInSeconds
+    thumbnailUrl
+    chapters {
+        title
+        startTimeInSeconds
+    }
+    createdBy {
+        thirdPartyUser {
+            id
+            email
+            name
+        }
+        user {
+            name
+        }
+    }
+}
+`,P=`
+... on ExternalWorkItem {
+	assignee {
+		thirdPartyUser {
+			id
+			email
+			name
+		}
+		user {
+			name
+		}
+	}
+	attachments {
+		byteSize
+		mimeType
+		thumbnailUrl
+		title
+		url
+	}
+	collaborators {
+		thirdPartyUser {
+			id
+			email
+			name
+		}
+		user {
+			name
+		}
+	}
+	createdBy {
+		thirdPartyUser {
+			id
+			email
+			name
+		}
+		user {
+			name
+		}
+	}
+	dueDate
+	exceedsMaxCollaborators
+	workItemProject {
+		id
+		name
+	}
+	status
+	subtype
+	team
+	container @optIn(to: "ExternalDataDepotQueryV2") {
+		... on ExternalSpace {
+		displayName
+		url
+		subtype @include(if: $includeSpaceSubtype)
+	   }
+	}
+}
+`,$=`
+... on SearchResultGraphDocument {
+	excerpt @skip(if: $skipFieldsFor3pInQuickFind)
+	permissionLevel @skip(if: $skipFieldsFor3pInQuickFind)
+	initialContributors @skip(if: $skipFieldsFor3pInQuickFind) {
+		name
+		id
+		externalId
+	}
+	subtype
+	integrationId
+	providerId
+	connectorType
+	lastModifiedDate
+	linkedEntities @skip(if: $skipFieldsFor3pInQuickFind) {
+		id
+		title
+		excerpt,
+		permissionLevel,
+		subtype
+		integrationId
+		lastModifiedDate
+		entity @skip(if: $skip3pEntityHydration) {
+			`.concat(S,`
+		}
+		initialContributors {
+			name
+			id
+			externalId
+		}
+		containerName @optIn(to: "SearchPerformanceImprovementChanges")
+		allContributors @optIn(to: "SearchPerformanceImprovementChanges") {
+			id
+			accountId
+			externalId
+			name
+			nickname
+			email
+			picture
+			extendedProfile {
+				jobTitle
+				department
+				organization
+			}
+		}
+	}
+	entity @skip(if: $skip3pEntityHydration) {
+		`).concat(i,`
+		`).concat(s,`
+		`).concat(c,`
+		`).concat(u,`
+		`).concat(v,`
+		`).concat(h,`
+		`).concat(m,`
+		`).concat(p,`
+		`).concat(y,`
+		`).concat(b,`
+		`).concat(f,`
+		`).concat(g,`
+		`).concat(I,`
+		`).concat(S,`
+		`).concat(A,`
+		`).concat(O,`
+		`).concat(E,`
+		`).concat(D,`
+		`).concat(P,`
+		`).concat(d,`
+		`).concat(_,`
+	}
+	entity @include(if: $includeGithubEntityHydration) {
+		`).concat(O,`
+		`).concat(E,`
+		`).concat(P,`
+	}
+	containerName @optIn(to: "SearchPerformanceImprovementChanges") @skip(if: $skipFieldsFor3pInQuickFind)
+	allContributors @optIn(to: "SearchPerformanceImprovementChanges") @skip(if: $skipFieldsFor3pInQuickFind) {
+		id
+		accountId
+		externalId
+		name
+		nickname
+		email
+		picture
+		extendedProfile {
+			jobTitle
+			department
+			organization
+		}
+	}
+	linkedResults @skip(if: $skipFieldsFor3pInQuickFind) {
+		id
+		title
+		url
+		type
+		description
+		lastModifiedDate
+		category
+		subtype
+		integrationId
+		providerId
+	}
+}
+`),R=((n={}).BRANCH="branch",n.CALENDAR_EVENT="calendar-event",n.CAMPAIGN="campaign",n.CASE="case",n.LEAD="lead",n.DEAL="deal",n.CUSTOMER_ORG="customer-org",n.CUSTOMER_CONTACT="customer-contact",n.COMMENT="comment",n.COMMIT="commit",n.CONVERSATION="conversation",n.DESIGN="design",n.DOCUMENT="document",n.MESSAGE="message",n.PROJECT="project",n.PULL_REQUEST="pull-request",n.REPOSITORY="repository",n.VIDEO="video",n.WORK_ITEM="work-item",n.SPACE="space",n.REMOTE_LINK="remote-link",n.DASHBOARD="dashboard",n.DATA_TABLE="data-table",n),x=function(){var e=[$];return(0,a.fg)("rovo_github_code_search")&&e.push(l),e.join(`
+`)},C=function(e){return"SearchResultGraphDocument"===e.__typename},T=function(e){return o.$.parse(e.id).resourceType===R.PULL_REQUEST},k=function(e){return o.$.parse(e.id).resourceType===R.DOCUMENT},j=function(e){return o.$.parse(e.id).resourceType===R.WORK_ITEM},w=function(e){return"SearchResultGraphCode"===e.__typename}},11738(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="PositionEmploymentTypes",u="query ".concat(c,`($cloudId: ID!, $fieldId: ID!, $rql: String, $after: String, $first: Int) {
+  radar_fieldValues(
+    cloudId: $cloudId
+    uniqueFieldId: $fieldId
+    rql: $rql
+    first: $first
+    after: $after
+  ) { 
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      cursor
+      node {
+        ... on RadarStringFieldValue {
+          __typename
+          isRestricted
+          stringValue: value
+        }
+      }
+    }
+  }
+}`),l=function(e,r){var t=arguments.length>2&&void 0!==arguments[2]?arguments[2]:20,a=arguments.length>3?arguments[3]:void 0,l=arguments.length>4?arguments[4]:void 0,d="positionEmploymentType";return s.inMemoryDecorator([e,t,r,d,a].filter(Boolean).join("-"),(0,n.A)(o().mark(function n(){var s,p;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:if(e){n.next=1;break}return n.abrupt("return",{data:{radar_fieldValues:{edges:[]}}});case 1:return n.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e,first:t,rql:r,fieldId:d,after:a},operationName:c,headers:l});case 2:if(!(null==(s=(p=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=3;break}return n.abrupt("return",Promise.reject(p));case 3:return n.abrupt("return",p);case 4:case"end":return n.stop()}},n)})))};t.d(r,{P:()=>l})},191945(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="PositionJobFamilies",u="query ".concat(c,`($cloudId: ID!, $fieldId: ID!, $rql: String, $after: String, $first: Int) {
+  radar_fieldValues(
+    cloudId: $cloudId
+    uniqueFieldId: $fieldId
+    rql: $rql
+    first: $first
+    after: $after
+  ) { 
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      cursor
+      node {
+        ... on RadarStringFieldValue {
+          __typename
+          isRestricted
+          stringValue: value
+        }
+      }
+    }
+  }
+}`),l=function(e){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:20,t=arguments.length>2?arguments[2]:void 0,a=arguments.length>3?arguments[3]:void 0,l=arguments.length>4?arguments[4]:void 0,d="positionJobFamily";return s.inMemoryDecorator([e,r,t,d,a].filter(Boolean).join("-"),(0,n.A)(o().mark(function n(){var s,p;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:if(e){n.next=1;break}return n.abrupt("return",{data:{radar_fieldValues:{edges:[]}}});case 1:return n.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e,first:r,rql:t,fieldId:d,after:a},operationName:c,headers:l});case 2:if(!(null==(s=(p=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=3;break}return n.abrupt("return",Promise.reject(p));case 3:return n.abrupt("return",p);case 4:case"end":return n.stop()}},n)})))};t.d(r,{n:()=>l})},452038(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="PositionStatuses",u="query ".concat(c,`($cloudId: ID!, $fieldId: ID!, $rql: String, $after: String, $first: Int) {
+  radar_fieldValues(
+    cloudId: $cloudId
+    uniqueFieldId: $fieldId
+    rql: $rql
+    first: $first
+    after: $after
+  ) { 
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      cursor
+      node {
+        ... on RadarStatusFieldValue {
+          __typename
+          isRestricted
+          statusValue: value
+          statusDisplayValue: displayValue
+          appearance
+        }
+      }
+    }
+  }
+}`),l=function(e){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:20,t=arguments.length>2?arguments[2]:void 0,a=arguments.length>3?arguments[3]:void 0,l=arguments.length>4?arguments[4]:void 0,d="positionStatus";return s.inMemoryDecorator([e,r,t,d,a].filter(Boolean).join("-"),(0,n.A)(o().mark(function n(){var s,p;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:if(e){n.next=1;break}return n.abrupt("return",{data:{radar_fieldValues:{edges:[]}}});case 1:return n.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e,first:r,rql:t,fieldId:d,after:a},operationName:c,headers:l});case 2:if(!(null==(s=(p=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=3;break}return n.abrupt("return",Promise.reject(p));case 3:return n.abrupt("return",p);case 4:case"end":return n.stop()}},n)})))};t.d(r,{W:()=>l})},98077(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=(0,t(318051).L)(),c="PositionTeams",u="query ".concat(c,`($cloudId: ID!, $fieldId: ID!, $rql: String, $after: String, $first: Int) {
+  radar_fieldValues(
+    cloudId: $cloudId
+    uniqueFieldId: $fieldId
+    rql: $rql
+    first: $first
+    after: $after
+  ) { 
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      cursor
+      node {
+        __typename
+        __isRadarFieldValue: __typename
+        ... on RadarAriFieldValue {
+          __typename
+          isRestricted
+          ari
+          value {
+            __typename
+            ... on TeamV2 {
+              __typename
+              displayName
+              id
+              organizationId
+              smallAvatarImageUrl
+            }
+          }
+        }
+      }
+    }
+  }
+}`),l=function(e){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:20,t=arguments.length>2?arguments[2]:void 0,a=arguments.length>3?arguments[3]:void 0,l=arguments.length>4?arguments[4]:void 0,d="team";return s.inMemoryDecorator([e,r,t,d,a].filter(Boolean).join("-"),(0,n.A)(o().mark(function n(){var s,p;return o().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:if(e){n.next=1;break}return n.abrupt("return",{data:{radar_fieldValues:{edges:[]}}});case 1:return n.next=2,(0,i.g)({graphQuery:u,variables:{cloudId:e,first:r,rql:t,fieldId:d,after:a},operationName:c,headers:l});case 2:if(!(null==(s=(p=n.sent).errors)?void 0:s.some(function(e){return e}))){n.next=3;break}return n.abrupt("return",Promise.reject(p));case 3:return n.abrupt("return",p);case 4:case"end":return n.stop()}},n)})))};t.d(r,{s:()=>l})},276018(e,r,t){var n=t(606100),a=t(345261),o=t.n(a),i=t(316090),s=t(318051);(0,s.L)();var c=(0,s.L)(),u="SearchPageUsersQuery",l=function(e,r){return c.inMemoryDecorator(e.join(","),(0,n.A)(o().mark(function t(){var n,a;return o().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=1,(0,i.g)({graphQuery:`
+query `.concat(u,`($accountIds: [ID!]!) {
+  users(accountIds: $accountIds) {
+    id
+    name
+    picture
+    accountId
+  }
+}
+`),variables:{accountIds:e},operationName:u,headers:r});case 1:if(!(null==(n=(a=t.sent).errors)?void 0:n.some(function(e){return e}))){t.next=2;break}return t.abrupt("return",Promise.reject(a));case 2:return t.abrupt("return",a);case 3:case"end":return t.stop()}},t)})))};t.d(r,{dq:()=>l})}}]);
